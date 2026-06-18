@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="BulkX favicon">
+  <defs>
+    <linearGradient id="xFill" x1="22" y1="18" x2="100" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff06a"/>
+      <stop offset="0.48" stop-color="#ffcb05"/>
+      <stop offset="1" stop-color="#e8a900"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M38 12H71L80 37L99 12H126L94 57L126 116H94L78 83L55 116H27L64 66L38 12Z"
+    fill="#001b40"
+    transform="translate(6 7)"
+  />
+
+  <path
+    d="M38 12H71L80 37L99 12H126L94 57L126 116H94L78 83L55 116H27L64 66L38 12Z"
+    fill="none"
+    stroke="#0b54aa"
+    stroke-width="12"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M38 12H71L80 37L99 12H126L94 57L126 116H94L78 83L55 116H27L64 66L38 12Z"
+    fill="url(#xFill)"
+  />
+</svg>
