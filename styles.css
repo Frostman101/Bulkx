@@ -622,8 +622,9 @@ footer p:last-child {
   }
 
   .brand-x {
-    -webkit-text-stroke: 6px #0b54aa;
-    margin-left: 6px;
+    -webkit-text-stroke: 3px #0b54aa;
+    margin-left: 7px;
+    color: var(--yellow);
   }
 
   .hero {
