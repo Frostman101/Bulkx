@@ -617,6 +617,20 @@ footer p:last-child {
 
 @media (max-width: 650px) {
 
+  .section-title {
+      gap: 8px;
+  }
+
+  .section-ball {
+      width: 30px;
+      height: 30px;
+  }
+
+  .section-title h3 {
+      font-size: 42px;
+      line-height: 0.9;
+  }
+
   .brand {
     font-size: 42px;
   }
