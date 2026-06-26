@@ -412,7 +412,8 @@ a { color: inherit; text-decoration: none; }
 .black svg .gold { fill: var(--yellow); }
 
 .red { color: #d00000; }
-.red svg path { fill: #e20d0d; }
+.red svg path,
+.red svg rect { fill: #e20d0d; }
 
 .rate-note {
   margin: 16px 0 8px;
