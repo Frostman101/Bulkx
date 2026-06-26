@@ -693,10 +693,6 @@ footer p:last-child {
     overflow: hidden;
   }
 
-  .buy-card.red .buy-icon svg {
-      transform: translateY(6px);
-  }
-
   footer p:last-child {
     text-align: left;
   }
