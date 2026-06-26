@@ -333,15 +333,26 @@ a { color: inherit; text-decoration: none; }
 .buy-card::after {
   content: "";
   position: absolute;
-  width: 185px;
-  height: 185px;
-  right: -40px;
-  bottom: -75px;
+  width: 175px;
+  height: 175px;
+  right: -22px;
+  bottom: -62px;
   border-radius: 50%;
-  opacity: .08;
+  opacity: .075;
   background:
-    linear-gradient(to bottom, #e20d0d 0 45%, #111 45% 55%, #fff 55% 100%);
-  border: 12px solid #111;
+    radial-gradient(circle at 50% 50%,
+      #fff 0 16px,
+      #111 17px 28px,
+      transparent 29px
+    ),
+    linear-gradient(to bottom,
+      #e20d0d 0 44%,
+      #111 44% 56%,
+      #fff 56% 100%
+    );
+  border: 11px solid #111;
+  transform: rotate(-8deg);
+  z-index: 0;
 }
 
 .buy-icon {
