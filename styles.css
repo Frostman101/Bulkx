@@ -694,9 +694,9 @@ footer p:last-child {
   }
 
   .buy-card.red .buy-icon svg {
-      width: 138px;
+      transform: translateY(6px);
   }
-  
+
   footer p:last-child {
     text-align: left;
   }
