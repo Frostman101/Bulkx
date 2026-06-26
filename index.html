@@ -136,12 +136,27 @@
       <div class="bulk-calculator">
         <h4>Estimate Your Bulk Value</h4>
 
-        <div class="calc-grid">
-          <input type="number" id="calc-exv" placeholder="EX / V count">
-          <input type="number" id="calc-reverse" placeholder="Reverse Holo count">
-          <input type="number" id="calc-holo" placeholder="Holo Rare count">
-          <input type="number" id="calc-common" placeholder="Common / Uncommon count">
+        <div class="calc-field">
+          <label for="calc-exv">EX / V</label>
+          <input type="number" id="calc-exv" placeholder="Enter quantity">
         </div>
+
+        <div class="calc-field">
+          <label for="calc-reverse">Reverse Holos</label>
+          <input type="number" id="calc-reverse" placeholder="Enter quantity">
+        </div>
+
+        <div class="calc-field">
+          <label for="calc-holo">Holo Rares</label>
+          <input type="number" id="calc-holo" placeholder="Enter quantity">
+        </div>
+
+        <div class="calc-field">
+          <label for="calc-common">Common / Uncommon</label>
+          <input type="number" id="calc-common" placeholder="Enter quantity">
+        </div>
+
+      </div>
 
         <div class="calc-total">
           Estimated Payout: <span id="calc-total">$0.00</span>
