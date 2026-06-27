@@ -643,13 +643,18 @@ a {
 
 .guideline-list li {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 24px max-content 1fr;
   align-items: center;
+  column-gap: 8px;
+
   min-height: 58px;
-  padding: 16px 18px 16px 50px;
+  padding: 14px 18px;
+
   background: rgba(255,255,255,.72);
   border: 2px solid rgba(42,117,187,.08);
   border-radius: 18px;
+
   color: var(--ink);
   font-size: 17px;
   line-height: 1.35;
@@ -659,24 +664,13 @@ a {
 /* Tiny CSS-only Poké Ball bullet */
 .guideline-list li::before {
   content: "";
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  width: 22px;
-  height: 22px;
-  transform: translateY(-50%);
+  position: static;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background:
-    radial-gradient(circle at center,
-      #fff 0 3px,
-      #111 4px 6px,
-      transparent 7px
-    ),
-    linear-gradient(to bottom,
-      #e20d0d 0 45%,
-      #111 45% 55%,
-      #fff 55% 100%
-    );
+    radial-gradient(circle at center, #fff 0 3px, #111 4px 6px, transparent 7px),
+    linear-gradient(to bottom, #e20d0d 0 45%, #111 45% 55%, #fff 55% 100%);
   border: 2px solid #111;
   box-shadow: 0 2px 0 rgba(0,0,0,.15);
 }
@@ -684,6 +678,7 @@ a {
 .guideline-list strong {
   color: var(--red);
   font-weight: 950;
+  white-space: nowrap;
 }
 
 /* =========================
