@@ -628,16 +628,77 @@ footer p:last-child {
 /* =========================
    Bulk Calculator
    ========================= */
-.bulk-calculator {
-  max-width: 950px;
-  margin: 42px auto 10px;
-  padding: 34px 38px;
-  text-align: center;
-  border: 4px solid var(--yellow);
-  border-radius: 28px;
-  background: linear-gradient(180deg, #fff, #f8fbff);
-  box-shadow: 0 8px 0 rgba(0,0,0,.08);
-}
+   .bulk-calculator {
+       position: relative;
+       overflow: hidden;
+
+       max-width: 950px;
+       margin: 42px auto 10px;
+       padding: 34px 38px;
+       text-align: center;
+
+       border: 4px solid var(--yellow);
+       border-radius: 28px;
+
+       background:
+    repeating-conic-gradient(
+    from 180deg at left center,
+      rgba(7,153,241,.08) 0deg,
+      rgba(7,153,241,0) 3deg,
+      rgba(7,153,241,0) 9deg
+  ),
+  repeating-conic-gradient(
+    from 0deg at right center,
+      rgba(226,13,13,.07) 0deg,
+      rgba(226,13,13,0) 3deg,
+      rgba(226,13,13,0) 9deg
+  ),
+  radial-gradient(circle at center,
+    rgba(255,255,255,.98) 0%,
+    rgba(255,255,255,.96) 58%,
+    rgba(255,255,255,.90) 100%
+  ),
+  linear-gradient(180deg,#fff,#f8fbff);
+
+       box-shadow: 0 8px 0 rgba(0,0,0,.08);
+   }
+
+   .bulk-calculator::before {
+       content: "";
+
+       position: absolute;
+       inset: 0;
+
+       background:
+           radial-gradient(circle at center,
+               transparent 0 26px,
+               rgba(0,0,0,.035) 27px 42px,
+               transparent 43px),
+
+           linear-gradient(to bottom,
+               rgba(226,13,13,.04) 0 45%,
+               rgba(0,0,0,.035) 45% 55%,
+               rgba(255,255,255,.04) 55% 100%);
+
+       border-radius: 50%;
+       width: 420px;
+       height: 420px;
+
+       left: 50%;
+       top: 58%;
+
+       transform: translate(-50%, -50%);
+
+       border: 14px solid rgba(0,0,0,.035);
+
+       opacity: .8;
+       pointer-events: none;
+   }
+
+   .bulk-calculator > * {
+       position: relative;
+       z-index: 2;
+   }
 
 .bulk-calculator h4 {
   margin: 0 0 30px;
