@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity=".96"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".88"/>
+    </radialGradient>
+
+    <linearGradient id="blueFade" x1="0%" y1="50%" x2="52%" y2="50%">
+      <stop offset="0%" stop-color="#0799f1" stop-opacity=".12"/>
+      <stop offset="55%" stop-color="#0799f1" stop-opacity=".045"/>
+      <stop offset="100%" stop-color="#0799f1" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="redFade" x1="100%" y1="50%" x2="48%" y2="50%">
+      <stop offset="0%" stop-color="#e20d0d" stop-opacity=".10"/>
+      <stop offset="55%" stop-color="#e20d0d" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#e20d0d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <!-- soft color wash -->
+  <rect width="650" height="520" fill="url(#blueFade)"/>
+  <rect x="550" width="650" height="520" fill="url(#redFade)"/>
+
+  <!-- left blue rays -->
+  <g opacity=".22" fill="#0799f1">
+    <polygon points="0,260 360,0 386,0"/>
+    <polygon points="0,260 430,30 455,45"/>
+    <polygon points="0,260 510,90 535,112"/>
+    <polygon points="0,260 565,170 575,194"/>
+    <polygon points="0,260 580,250 580,270"/>
+    <polygon points="0,260 565,350 552,374"/>
+    <polygon points="0,260 500,430 472,450"/>
+    <polygon points="0,260 385,520 350,520"/>
+    <polygon points="0,260 270,520 235,520"/>
+    <polygon points="0,260 160,520 128,520"/>
+    <polygon points="0,260 80,520 55,520"/>
+    <polygon points="0,260 0,420 0,386"/>
+    <polygon points="0,260 0,132 0,100"/>
+    <polygon points="0,260 85,0 115,0"/>
+    <polygon points="0,260 205,0 238,0"/>
+  </g>
+
+  <!-- right red rays -->
+  <g opacity=".18" fill="#e20d0d">
+    <polygon points="1200,260 840,0 814,0"/>
+    <polygon points="1200,260 770,30 745,45"/>
+    <polygon points="1200,260 690,90 665,112"/>
+    <polygon points="1200,260 635,170 625,194"/>
+    <polygon points="1200,260 620,250 620,270"/>
+    <polygon points="1200,260 635,350 648,374"/>
+    <polygon points="1200,260 700,430 728,450"/>
+    <polygon points="1200,260 815,520 850,520"/>
+    <polygon points="1200,260 930,520 965,520"/>
+    <polygon points="1200,260 1040,520 1072,520"/>
+    <polygon points="1200,260 1120,520 1145,520"/>
+    <polygon points="1200,260 1200,420 1200,386"/>
+    <polygon points="1200,260 1200,132 1200,100"/>
+    <polygon points="1200,260 1115,0 1085,0"/>
+    <polygon points="1200,260 995,0 962,0"/>
+  </g>
+
+  <!-- white center softener -->
+  <rect width="1200" height="520" fill="url(#centerGlow)"/>
+</svg>
