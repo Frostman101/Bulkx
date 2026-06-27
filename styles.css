@@ -1,4 +1,5 @@
 :root {
+  /* Brand palette */
   --navy: #041b3f;
   --navy-dark: #020b1e;
   --blue: #0799f1;
@@ -6,15 +7,27 @@
   --yellow: #ffcb05;
   --red: #e20d0d;
   --white: #ffffff;
+
+  /* Text and UI colors */
   --ink: #041c43;
   --muted: #637083;
   --card-border: #e8b900;
+
+  /* Typography */
   --font: Arial, Helvetica, sans-serif;
 }
 
-* { box-sizing: border-box; }
+/* =========================
+   Base / Reset
+   ========================= */
 
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -25,7 +38,42 @@ body {
     #ffffff;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   Reusable Buttons
+   ========================= */
+
+.quote-btn,
+.outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 32px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 950;
+  font-size: 20px;
+  color: white;
+  border: 5px solid var(--yellow);
+  box-shadow: 0 5px 0 rgba(0,0,0,.28);
+}
+
+.quote-btn {
+  background: linear-gradient(180deg, #ff2020, #c90000);
+}
+
+.outline-btn {
+  background: rgba(2,14,38,.7);
+}
+
+/* =========================
+   Header / Navigation
+   ========================= */
 
 .nav {
   position: sticky;
@@ -82,29 +130,9 @@ a { color: inherit; text-decoration: none; }
   text-shadow: 2px 3px 0 rgba(0,0,0,.35);
 }
 
-.quote-btn,
-.outline-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 54px;
-  padding: 0 32px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-weight: 950;
-  font-size: 20px;
-  color: white;
-  border: 5px solid var(--yellow);
-  box-shadow: 0 5px 0 rgba(0,0,0,.28);
-}
-
-.quote-btn {
-  background: linear-gradient(180deg, #ff2020, #c90000);
-}
-
-.outline-btn {
-  background: rgba(2,14,38,.7);
-}
+/* =========================
+   Hero Section
+   ========================= */
 
 .hero {
   position: relative;
@@ -199,6 +227,7 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 
+/* Hero Poké Ball decoration */
 .pokeball {
   position: absolute;
   z-index: 2;
@@ -264,25 +293,23 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 -10px 0 white;
 }
 
-.section-ball {
-    width: 42px;
-    height: 42px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-.buylist {
-  position: relative;
-  z-index: 5;
-  padding: 22px 4vw 12px;
-  background: white;
-}
+/* =========================
+   Shared Section Titles
+   ========================= */
 
 .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18px; /* was 28 */
+  gap: 18px;
   margin-bottom: 14px;
+}
+
+.section-ball {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .section-title span {
@@ -305,6 +332,17 @@ a { color: inherit; text-decoration: none; }
   text-shadow: 3px 4px 0 rgba(0,45,105,.18);
 }
 
+/* =========================
+   Buylist Section
+   ========================= */
+
+.buylist {
+  position: relative;
+  z-index: 5;
+  padding: 22px 4vw 12px;
+  background: white;
+}
+
 .buy-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -323,11 +361,11 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   border: 5px solid var(--card-border);
   border-radius: 22px;
-  background:
-    linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
   box-shadow: 0 6px 0 rgba(0,0,0,.10);
 }
 
+/* Faint Poké Ball watermark on each buylist card */
 .buy-card::after {
   content: "";
   position: absolute;
@@ -371,7 +409,6 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   text-transform: uppercase;
   text-align: center;
-
   min-width: 0;
   overflow-wrap: anywhere;
 }
@@ -398,22 +435,57 @@ a { color: inherit; text-decoration: none; }
   font-style: italic;
 }
 
-.purple { color: #5a168f; }
-.purple svg polygon { fill: #55148e; stroke: #1c0635; stroke-width: 5; }
-.purple svg circle:first-of-type { fill: white; }
-.purple svg circle:last-of-type { fill: #55148e; }
+/* Buylist icon colors */
+.purple {
+  color: #5a168f;
+}
 
-.blue { color: #004a93; }
-.blue svg path:first-child { fill: #063f75; }
-.blue svg .spark { fill: white; }
+.purple svg polygon {
+  fill: #55148e;
+  stroke: #1c0635;
+  stroke-width: 5;
+}
 
-.black { color: #111; }
-.black svg circle { fill: #101014; }
-.black svg .gold { fill: var(--yellow); }
+.purple svg circle:first-of-type {
+  fill: white;
+}
 
-.red { color: #d00000; }
+.purple svg circle:last-of-type {
+  fill: #55148e;
+}
+
+.blue {
+  color: #004a93;
+}
+
+.blue svg path:first-child {
+  fill: #063f75;
+}
+
+.blue svg .spark {
+  fill: white;
+}
+
+.black {
+  color: #111;
+}
+
+.black svg circle {
+  fill: #101014;
+}
+
+.black svg .gold {
+  fill: var(--yellow);
+}
+
+.red {
+  color: #d00000;
+}
+
 .red svg path,
-.red svg rect { fill: #e20d0d; }
+.red svg rect {
+  fill: #e20d0d;
+}
 
 .rate-note {
   margin: 16px 0 8px;
@@ -430,6 +502,193 @@ a { color: inherit; text-decoration: none; }
   -webkit-text-stroke: 2px #111;
   margin-right: 8px;
 }
+
+/* =========================
+   Bulk Calculator
+   ========================= */
+
+.bulk-calculator {
+  position: relative;
+  overflow: hidden;
+  max-width: 950px;
+  margin: 42px auto 10px;
+  padding: 34px 38px;
+  text-align: center;
+  border: 4px solid var(--yellow);
+  border-radius: 28px;
+  background: linear-gradient(180deg,#fff,#f8fbff);
+  box-shadow: 0 8px 0 rgba(0,0,0,.08);
+}
+
+.bulk-calculator h4 {
+  margin: 0 0 30px;
+  font-size: 42px;
+  font-weight: 950;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  color: var(--ink);
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.calc-field label {
+  font-size: 17px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-left: 6px;
+}
+
+.calc-grid input {
+  width: 100%;
+  height: 62px;
+  padding: 0 18px;
+  border: 3px solid #dbe5f5;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 800;
+  background: #fff;
+  transition: .2s;
+}
+
+.calc-grid input::placeholder {
+  color: #6e6e6e;
+  font-weight: 700;
+}
+
+.calc-grid input:focus {
+  border-color: #2a75bb;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(42,117,187,.12);
+}
+
+.calc-total {
+  margin: 42px auto 14px;
+  padding-top: 26px;
+  width: min(560px, 100%);
+  border-top: 2px solid rgba(42,117,187,.10);
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.calc-total span {
+  display: block;
+  margin-top: 10px;
+  font-size: 68px;
+  line-height: .95;
+  font-weight: 950;
+  letter-spacing: -2px;
+  color: var(--red);
+  text-shadow: 0 3px 0 rgba(0,0,0,.08);
+}
+
+.bulk-calculator .quote-btn {
+  width: auto;
+  min-width: 260px;
+}
+
+/* =========================
+   Submission Guidelines
+   ========================= */
+
+.guidelines {
+  max-width: 950px;
+  margin: 34px auto 18px;
+  padding: 30px 34px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 4px solid var(--yellow);
+  box-shadow: 0 8px 0 rgba(0,0,0,.08);
+}
+
+.guidelines h3 {
+  margin: 0 0 22px;
+  text-align: center;
+  color: var(--ink);
+  text-transform: uppercase;
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1;
+  font-style: italic;
+  font-weight: 950;
+  letter-spacing: -1px;
+  text-shadow: 3px 4px 0 rgba(0,45,105,.12);
+}
+
+.guideline-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 34px;
+  max-width: 920px;
+}
+
+.guideline-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  padding: 16px 18px 16px 50px;
+  background: rgba(255,255,255,.72);
+  border: 2px solid rgba(42,117,187,.08);
+  border-radius: 18px;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* Tiny CSS-only Poké Ball bullet */
+.guideline-list li::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center,
+      #fff 0 3px,
+      #111 4px 6px,
+      transparent 7px
+    ),
+    linear-gradient(to bottom,
+      #e20d0d 0 45%,
+      #111 45% 55%,
+      #fff 55% 100%
+    );
+  border: 2px solid #111;
+  box-shadow: 0 2px 0 rgba(0,0,0,.15);
+}
+
+.guideline-list strong {
+  color: var(--red);
+  font-weight: 950;
+}
+
+/* =========================
+   How It Works
+   ========================= */
 
 .how {
   padding: 26px 4vw 10px;
@@ -495,6 +754,10 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
 }
 
+/* =========================
+   Payment Methods
+   ========================= */
+
 .payments {
   text-align: center;
   padding: 40px 4vw 24px;
@@ -524,6 +787,10 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 5px 0 rgba(0,0,0,.15);
 }
 
+/* =========================
+   Features
+   ========================= */
+
 .features {
   max-width: 1460px;
   margin: 0 auto;
@@ -545,6 +812,10 @@ a { color: inherit; text-decoration: none; }
   font-size: 34px;
   margin-bottom: 8px;
 }
+
+/* =========================
+   Quote Form
+   ========================= */
 
 .quote {
   text-align: center;
@@ -580,6 +851,10 @@ textarea {
   cursor: pointer;
 }
 
+/* =========================
+   Footer
+   ========================= */
+
 footer {
   min-height: 115px;
   display: grid;
@@ -601,6 +876,10 @@ footer .brand {
 footer p:last-child {
   text-align: right;
 }
+
+/* =========================
+   Responsive: Tablet
+   ========================= */
 
 @media (max-width: 1050px) {
   .nav {
@@ -625,113 +904,21 @@ footer p:last-child {
   }
 }
 
+/* Calculator and guidelines stack earlier than the rest of the page */
+@media (max-width: 850px) {
+  .calc-grid,
+  .guideline-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bulk-calculator {
+    padding: 30px 24px;
+  }
+}
+
 /* =========================
-   Bulk Calculator
+   Responsive: Mobile
    ========================= */
-   .bulk-calculator {
-  position: relative;
-  overflow: hidden;
-
-  max-width: 950px;
-  margin: 42px auto 10px;
-  padding: 34px 38px;
-  text-align: center;
-
-  border: 4px solid var(--yellow);
-  border-radius: 28px;
-
-  background:
-  linear-gradient(180deg,#fff,#f8fbff);
-  box-shadow: 0 8px 0 rgba(0,0,0,.08);
-}
-
-.bulk-calculator h4 {
-  margin: 0 0 30px;
-  font-size: 42px;
-  font-weight: 950;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -.5px;
-  color: var(--ink);
-}
-
-.calc-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 22px;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.calc-field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: left;
-}
-
-.calc-field label {
-  font-size: 17px;
-  font-weight: 900;
-  font-style: italic;
-  text-transform: uppercase;
-  color: var(--ink);
-  padding-left: 6px;
-}
-
-.calc-grid input {
-  width: 100%;
-  height: 62px;
-  padding: 0 18px;
-  border: 3px solid #dbe5f5;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 800;
-  background: #fff;
-  transition: .2s;
-}
-
-.calc-grid input::placeholder {
-  color: #6e6e6e;
-  font-weight: 700;
-}
-
-.calc-grid input:focus {
-  border-color: #2a75bb;
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(42,117,187,.12);
-}
-
-.calc-total {
-    margin: 42px auto 14px;
-    padding-top: 26px;
-
-    width: min(560px, 100%);
-    border-top: 2px solid rgba(42,117,187,.10);
-
-    font-size: 22px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--ink);
-}
-
-.calc-total span {
-    display: block;
-    margin-top: 10px;
-
-    font-size: 68px;
-    line-height: .95;
-    font-weight: 950;
-    letter-spacing: -2px;
-
-    color: var(--red);
-    text-shadow: 0 3px 0 rgba(0,0,0,.08);
-}
-
-.bulk-calculator .quote-btn {
-  width: auto;
-  min-width: 260px;
-}
 
 @media (max-width: 650px) {
   .buylist .section-title {
@@ -808,100 +995,24 @@ footer p:last-child {
     font-size: 34px;
   }
 
-  .calc-grid {
-    grid-template-columns: 1fr;
-  }
-
   .bulk-calculator .quote-btn {
     width: 100%;
   }
+
   .guidelines {
-    max-width: 950px;
-    margin: 34px auto 18px;
-    padding: 30px 34px;
-    border-radius: 28px;
-    background: linear-gradient(180deg, #ffffff, #f8fbff);
-    border: 4px solid var(--yellow);
-    box-shadow: 0 8px 0 rgba(0,0,0,.08);
+    padding: 26px 22px;
+    margin-top: 28px;
   }
-
-  .guidelines h3 {
-    margin: 0 0 22px;
-    text-align: center;
-    color: var(--ink);
-    text-transform: uppercase;
-    font-size: clamp(30px, 3.5vw, 44px);
-    line-height: 1;
-    font-style: italic;
-    font-weight: 950;
-    letter-spacing: -1px;
-    text-shadow: 3px 4px 0 rgba(0,45,105,.12);
-  }
-
-  .guideline-list {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-
-    display: grid;
-    grid-template-columns: repeat(2, minmax(320px, 1fr));
-    gap: 18px 34px;
-
-    max-width: 860px;
-}
 
   .guideline-list li {
-    position: relative;
-    padding-left: 36px;
-    color: var(--ink);
-    font-size: 18px;
-    line-height: 1.35;
-    font-weight: 750;
+    font-size: 16px;
+    padding-left: 32px;
   }
 
   .guideline-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: .18em;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background:
-      radial-gradient(circle at center,
-        #fff 0 3px,
-        #111 4px 6px,
-        transparent 7px
-      ),
-      linear-gradient(to bottom,
-        #e20d0d 0 45%,
-        #111 45% 55%,
-        #fff 55% 100%
-      );
-    border: 2px solid #111;
-    box-shadow: 0 2px 0 rgba(0,0,0,.15);
-  }
-
-  .guideline-list strong {
-    color: var(--red);
-    font-weight: 950;
-  }
-
-  @media (max-width: 650px) {
-    .guidelines {
-      padding: 26px 22px;
-      margin-top: 28px;
-    }
-
-    .guideline-list li {
-      font-size: 16px;
-      padding-left: 32px;
-    }
-
-    .guideline-list li::before {
-      width: 19px;
-      height: 19px;
-    }
+    left: 10px;
+    width: 19px;
+    height: 19px;
   }
 
   footer p:last-child {

@@ -1,23 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- =========================================================
+       BULKX - Document Setup
+       ========================================================= -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>BULKX — Pokémon Bulk Buylist</title>
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Favicon files -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- =========================================================
+       Header / Navigation
+       ========================================================= -->
   <header class="nav">
     <a class="brand" href="#" aria-label="BULKX home">
       <span class="brand-bulk">BULK</span><span class="brand-x">X</span>
     </a>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#buylist">Buylist</a>
       <a href="#how">How It Works</a>
       <a href="#payments">Payment Methods</a>
@@ -27,16 +36,24 @@
   </header>
 
   <main>
+    <!-- =========================================================
+         Hero Section
+         ========================================================= -->
     <section class="hero">
-      <div class="hero-pattern"></div>
-      <div class="hero-rays"></div>
+      <!-- Decorative background layers -->
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-rays" aria-hidden="true"></div>
+
+      <!-- Decorative hero Pokéball -->
       <div class="pokeball" aria-hidden="true">
         <div class="pokeball-band"></div>
         <div class="pokeball-button"></div>
         <div class="pokeball-shine"></div>
       </div>
-      <div class="yellow-swoosh"></div>
 
+      <div class="yellow-swoosh" aria-hidden="true"></div>
+
+      <!-- Hero copy -->
       <div class="hero-content">
         <h1><span class="h-bulk">BULK</span><span class="h-x">X</span></h1>
         <h2>Trade In Your Pokémon Bulk</h2>
@@ -49,14 +66,20 @@
       </div>
     </section>
 
+    <!-- =========================================================
+         Buylist Section
+         - data-card-type and data-price power the calculator.
+         - Update card prices here when your buylist changes.
+         ========================================================= -->
     <section id="buylist" class="buylist">
       <div class="section-title">
-          <img src="pokeball_bullet.svg" class="section-ball" alt="">
-          <h3>Pokémon Buylist</h3>
-          <img src="pokeball_bullet.svg" class="section-ball" alt="">
+        <img src="pokeball_bullet.svg" class="section-ball" alt="" />
+        <h3>Pokémon Buylist</h3>
+        <img src="pokeball_bullet.svg" class="section-ball" alt="" />
       </div>
 
       <div class="buy-grid">
+        <!-- EX / V Card -->
         <article class="buy-card purple" data-card-type="exv" data-price="0.70">
           <div class="buy-icon">
             <svg viewBox="0 0 120 120" role="img" aria-label="Purple EX V icon">
@@ -65,6 +88,7 @@
               <circle cx="60" cy="62" r="10" />
             </svg>
           </div>
+
           <div class="buy-copy">
             <h4>EX / V</h4>
             <strong>$0.70</strong>
@@ -72,6 +96,7 @@
           </div>
         </article>
 
+        <!-- Reverse Holos Card -->
         <article class="buy-card blue" data-card-type="reverse" data-price="0.055">
           <div class="buy-icon">
             <svg viewBox="0 0 120 120" role="img" aria-label="Blue reverse holo icon">
@@ -79,6 +104,7 @@
               <path class="spark" d="M62 45l8 18 19 8-19 8-8 19-8-19-18-8 18-8 8-18Z" />
             </svg>
           </div>
+
           <div class="buy-copy">
             <h4>Reverse Holos</h4>
             <strong>$55.00</strong>
@@ -86,6 +112,7 @@
           </div>
         </article>
 
+        <!-- Holo Rares Card -->
         <article class="buy-card black" data-card-type="holo" data-price="0.055">
           <div class="buy-icon">
             <svg viewBox="0 0 120 120" role="img" aria-label="Black and yellow holo rare icon">
@@ -95,6 +122,7 @@
               <path class="gold small-b" d="M24 75l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z" />
             </svg>
           </div>
+
           <div class="buy-copy">
             <h4>Holo Rares</h4>
             <strong>$55.00</strong>
@@ -102,30 +130,32 @@
           </div>
         </article>
 
+        <!-- Common / Uncommon Card -->
         <article class="buy-card red" data-card-type="common" data-price="0.025">
           <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Common / Uncommon">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Common / Uncommon icon">
               <g transform="translate(0 6) scale(1.08)">
-  <!-- Left finger -->
-  <path d="M14.1 7.7 L12.3 9.0 L12.3 38.6 L13.6 39.9 L28.2 39.9 L29.5 38.6 L29.5 9.4 L27.7 7.7 Z"/>
+                <!-- Left finger -->
+                <path d="M14.1 7.7 L12.3 9.0 L12.3 38.6 L13.6 39.9 L28.2 39.9 L29.5 38.6 L29.5 9.4 L27.7 7.7 Z" />
 
-  <!-- Middle left -->
-  <path d="M35.0 3.0 L34.5 39.0 L35.5 39.9 L50.5 39.9 L51.8 38.1 L51.4 3.4 L49.5 2.6 Z"/>
+                <!-- Middle left finger -->
+                <path d="M35.0 3.0 L34.5 39.0 L35.5 39.9 L50.5 39.9 L51.8 38.1 L51.4 3.4 L49.5 2.6 Z" />
 
-  <!-- Middle right -->
-  <path d="M57.3 3.0 L56.4 4.3 L56.4 38.1 L57.7 39.9 L72.7 39.9 L73.6 39.0 L73.6 3.9 L71.8 2.6 Z"/>
+                <!-- Middle right finger -->
+                <path d="M57.3 3.0 L56.4 4.3 L56.4 38.1 L57.7 39.9 L72.7 39.9 L73.6 39.0 L73.6 3.9 L71.8 2.6 Z" />
 
-  <!-- Right finger -->
-  <path d="M80.5 7.7 L78.6 9.4 L78.6 38.6 L80.0 39.9 L94.5 39.9 L95.9 38.6 L95.9 9.0 L94.1 7.7 Z"/>
+                <!-- Right finger -->
+                <path d="M80.5 7.7 L78.6 9.4 L78.6 38.6 L80.0 39.9 L94.5 39.9 L95.9 38.6 L95.9 9.0 L94.1 7.7 Z" />
 
-  <!-- Left palm -->
-  <path d="M12.3 76.7 L13.2 77.6 L32.3 77.6 L36.4 74.6 L36.4 60.4 L38.2 58.7 L54.1 58.3 L54.5 46.7 L53.6 45.9 L13.2 45.9 L12.3 47.1 Z"/>
+                <!-- Left palm -->
+                <path d="M12.3 76.7 L13.2 77.6 L32.3 77.6 L36.4 74.6 L36.4 60.4 L38.2 58.7 L54.1 58.3 L54.5 46.7 L53.6 45.9 L13.2 45.9 L12.3 47.1 Z" />
 
-  <!-- Right palm -->
-  <path d="M95.5 46.3 L64.1 45.9 L63.2 46.7 L63.2 65.1 L61.4 66.9 L45.9 66.9 L45.0 67.7 L45.0 78.4 L43.2 80.6 L35.9 84.9 L35.9 88.7 L37.3 89.6 L73.6 89.6 L75.0 88.7 L75.0 83.6 L79.5 78.0 L95.0 77.6 L95.9 76.7 Z"/>
-            </g>
+                <!-- Right palm -->
+                <path d="M95.5 46.3 L64.1 45.9 L63.2 46.7 L63.2 65.1 L61.4 66.9 L45.9 66.9 L45.0 67.7 L45.0 78.4 L43.2 80.6 L35.9 84.9 L35.9 88.7 L37.3 89.6 L73.6 89.6 L75.0 88.7 L75.0 83.6 L79.5 78.0 L95.0 77.6 L95.9 76.7 Z" />
+              </g>
             </svg>
           </div>
+
           <div class="buy-copy">
             <h4>Common / Uncommon</h4>
             <strong>$25.00</strong>
@@ -133,28 +163,34 @@
           </div>
         </article>
       </div>
+
+      <!-- =========================================================
+           Bulk Calculator
+           - Reads prices from data-price attributes above.
+           - Input fields auto-format with commas.
+           ========================================================= -->
       <div class="bulk-calculator">
         <h4>Estimate Your Bulk Value</h4>
 
         <div class="calc-grid">
           <div class="calc-field">
             <label for="calc-exv">EX / V</label>
-            <input type="text" inputmode="numeric" id="calc-exv" placeholder="Enter quantity">
+            <input type="text" inputmode="numeric" id="calc-exv" placeholder="Enter quantity" />
           </div>
 
           <div class="calc-field">
             <label for="calc-reverse">Reverse Holos</label>
-            <input type="text" inputmode="numeric" id="calc-reverse" placeholder="Enter quantity">
+            <input type="text" inputmode="numeric" id="calc-reverse" placeholder="Enter quantity" />
           </div>
 
           <div class="calc-field">
             <label for="calc-holo">Holo Rares</label>
-            <input type="text" inputmode="numeric" id="calc-holo" placeholder="Enter quantity">
+            <input type="text" inputmode="numeric" id="calc-holo" placeholder="Enter quantity" />
           </div>
 
           <div class="calc-field">
             <label for="calc-common">Common / Uncommon</label>
-            <input type="text" inputmode="numeric" id="calc-common" placeholder="Enter quantity">
+            <input type="text" inputmode="numeric" id="calc-common" placeholder="Enter quantity" />
           </div>
         </div>
 
@@ -164,56 +200,11 @@
 
         <a class="quote-btn" href="#quote">Get My Quote →</a>
       </div>
+    </section>
 
-<script>
-function getPrice(type) {
-  return Number(document.querySelector(`[data-card-type="${type}"]`).dataset.price);
-}
-
-function calculateBulkValue() {
-  const exv =
-    Number(document.getElementById("calc-exv").value.replace(/,/g, "")) || 0;
-
-  const reverse =
-    Number(document.getElementById("calc-reverse").value.replace(/,/g, "")) || 0;
-
-  const holo =
-    Number(document.getElementById("calc-holo").value.replace(/,/g, "")) || 0;
-
-  const common =
-    Number(document.getElementById("calc-common").value.replace(/,/g, "")) || 0;
-
-  const total =
-    exv * getPrice("exv") +
-    reverse * getPrice("reverse") +
-    holo * getPrice("holo") +
-    common * getPrice("common");
-
-  document.getElementById("calc-total").textContent =
-    total.toLocaleString("en-US", {
-      style: "currency",
-      currency: "USD"
-    });
-}
-
-// ONE event listener per input
-document.querySelectorAll(".bulk-calculator input").forEach(input => {
-
-  input.addEventListener("input", function () {
-
-    let value = this.value.replace(/,/g, "");
-    value = value.replace(/\D/g, "");
-
-    this.value = value
-      ? parseInt(value, 10).toLocaleString("en-US")
-      : "";
-
-    calculateBulkValue();
-  });
-
-});
-      </script>
-</section>
+    <!-- =========================================================
+         How It Works Section
+         ========================================================= -->
     <section id="how" class="how">
       <div class="boxed-section">
         <div class="section-title dark">
@@ -229,18 +220,21 @@ document.querySelectorAll(".bulk-calculator input").forEach(input => {
             <h4>Submit Inventory</h4>
             <p>Send your bulk counts through the quote form.</p>
           </div>
+
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-icon">💵</div>
             <h4>Receive Quote</h4>
             <p>We confirm the buylist value and preferred payment method.</p>
           </div>
+
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-icon">📦</div>
             <h4>Ship Cards</h4>
             <p>Ship your cards after the order details are confirmed.</p>
           </div>
+
           <div class="step">
             <div class="step-number">4</div>
             <div class="step-icon">🏦</div>
@@ -251,14 +245,21 @@ document.querySelectorAll(".bulk-calculator input").forEach(input => {
       </div>
     </section>
 
+    <!-- =========================================================
+         Payment Methods Section
+         ========================================================= -->
     <section id="payments" class="payments">
       <h3>Payment Methods</h3>
       <p>Simple order coordination without a seller portal. Track each deal directly through your message thread and payment app.</p>
+
       <div class="payment-pills">
         <span>PayPal</span>
       </div>
-
     </section>
+
+    <!-- =========================================================
+         Submission Guidelines Section
+         ========================================================= -->
     <section class="guidelines">
       <h3>Submission Guidelines</h3>
 
@@ -273,42 +274,89 @@ document.querySelectorAll(".bulk-calculator input").forEach(input => {
       </ul>
     </section>
 
+    <!-- =========================================================
+         Quote Form Section
+         ========================================================= -->
     <section id="quote" class="quote">
       <h3>Ready to Sell Bulk?</h3>
-      <p>Send your inventory count, email and phone # and We’ll reach out ASAP.</p>
+      <p>Send your inventory count, email and phone # and we’ll reach out ASAP.</p>
+
       <form action="https://formsubmit.co/jfrost0021@gmail.com" method="POST">
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New BulkX Quote Request" />
+        <input type="hidden" name="_captcha" value="false" />
 
-  <input type="hidden" name="_subject" value="New BulkX Quote Request">
-  <input type="hidden" name="_captcha" value="false">
+        <!-- Seller contact info -->
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
 
-  <input type="text" name="name" placeholder="Name" required />
+        <!-- Inventory notes -->
+        <textarea
+          name="inventory"
+          rows="8"
+          placeholder="Paste your inventory here...
 
-  <input type="email" name="email" placeholder="Email" required />
+EX / V: 100
+Reverse Holos: 1,000
+Holo Rares: 500
+Common / Uncommon: 10,000"
+          required></textarea>
 
-  <input type="tel" name="phone" placeholder="Phone Number" />
-
-  <textarea
-    name="inventory"
-    rows="8"
-    placeholder="Paste your inventory here...
-
-  EX / V: 100
-  Reverse Holos: 1,000
-  Holo Rares: 500
-  Common / Uncommon: 10,000"
-    required></textarea>
-
-  <button class="quote-btn" type="submit">
-    Submit Quote Request →
-  </button>
-
-</form>
+        <button class="quote-btn" type="submit">Submit Quote Request →</button>
+      </form>
     </section>
   </main>
 
+  <!-- =========================================================
+       Footer
+       ========================================================= -->
   <footer>
     <a class="brand" href="#"><span class="brand-bulk">BULK</span><span class="brand-x">X</span></a>
     <p>© 2026 BulkX. All rights reserved.</p>
   </footer>
+
+  <!-- =========================================================
+       Calculator Script
+       - Kept at the bottom so the HTML exists before JS runs.
+       ========================================================= -->
+  <script>
+    function getPrice(type) {
+      return Number(document.querySelector(`[data-card-type="${type}"]`).dataset.price);
+    }
+
+    function getQuantity(inputId) {
+      return Number(document.getElementById(inputId).value.replace(/,/g, "")) || 0;
+    }
+
+    function calculateBulkValue() {
+      const exv = getQuantity("calc-exv");
+      const reverse = getQuantity("calc-reverse");
+      const holo = getQuantity("calc-holo");
+      const common = getQuantity("calc-common");
+
+      const total =
+        exv * getPrice("exv") +
+        reverse * getPrice("reverse") +
+        holo * getPrice("holo") +
+        common * getPrice("common");
+
+      document.getElementById("calc-total").textContent = total.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+      });
+    }
+
+    document.querySelectorAll(".bulk-calculator input").forEach(input => {
+      input.addEventListener("input", function () {
+        let value = this.value.replace(/,/g, "");
+        value = value.replace(/\D/g, "");
+
+        this.value = value ? parseInt(value, 10).toLocaleString("en-US") : "";
+
+        calculateBulkValue();
+      });
+    });
+  </script>
 </body>
 </html>
