@@ -645,38 +645,6 @@ footer p:last-child {
   box-shadow: 0 8px 0 rgba(0,0,0,.08);
 }
 
-.bulk-calculator::before {
- content: "";
-
- position: absolute;
- width: 520px;
- height: 520px;
-
- left: 50%;
- top: 58%;
-
- transform: translate(-50%, -50%);
-
- border-radius: 50%;
- border: 14px solid rgba(0,0,0,.035);
-
- background:
-     radial-gradient(circle,
-         transparent 0 26px,
-         rgba(0,0,0,.035) 27px 42px,
-         transparent 43px),
-
-       linear-gradient(to bottom,
-          rgba(226,13,13,.045) 0 49%,
-          rgba(0,0,0,.025) 49% 51%,
-          rgba(255,255,255,.035) 51% 100%);
-
- opacity: .80;
-
- pointer-events: none;
-}
-
-
 .bulk-calculator h4 {
   margin: 0 0 30px;
   font-size: 42px;
