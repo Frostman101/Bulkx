@@ -671,7 +671,7 @@ footer p:last-child {
           rgba(0,0,0,.025) 49% 51%,
           rgba(255,255,255,.035) 51% 100%);
 
- opacity: .30;
+ opacity: .80;
 
  pointer-events: none;
 }
