@@ -641,24 +641,29 @@ footer p:last-child {
        border-radius: 28px;
 
        background:
-    repeating-conic-gradient(
-    from 180deg at left center,
-      rgba(7,153,241,.08) 0deg,
-      rgba(7,153,241,0) 3deg,
-      rgba(7,153,241,0) 9deg
-  ),
-  repeating-conic-gradient(
-    from 0deg at right center,
-      rgba(226,13,13,.07) 0deg,
-      rgba(226,13,13,0) 3deg,
-      rgba(226,13,13,0) 9deg
-  ),
-  radial-gradient(circle at center,
-    rgba(255,255,255,.98) 0%,
-    rgba(255,255,255,.96) 58%,
-    rgba(255,255,255,.90) 100%
-  ),
-  linear-gradient(180deg,#fff,#f8fbff);
+     /* Left energy rays */
+     repeating-conic-gradient(
+         from 180deg at left center,
+         rgba(7,153,241,.035) 0deg 1deg,
+         transparent 1deg 4deg
+     ),
+
+     /* Right energy rays */
+     repeating-conic-gradient(
+         from 0deg at right center,
+         rgba(226,13,13,.03) 0deg 1deg,
+         transparent 1deg 4deg
+     ),
+
+     /* Large white glow */
+     radial-gradient(circle at center,
+         rgba(255,255,255,1) 0%,
+         rgba(255,255,255,.98) 45%,
+         rgba(255,255,255,.92) 75%,
+         rgba(255,255,255,.85) 100%
+     ),
+
+     linear-gradient(180deg,#fff,#f8fbff);
 
        box-shadow: 0 8px 0 rgba(0,0,0,.08);
    }
