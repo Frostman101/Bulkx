@@ -641,9 +641,7 @@ footer p:last-child {
   border-radius: 28px;
 
   background:
-    url("energy-burst.svg") center / cover no-repeat,
-    linear-gradient(180deg,#fff,#f8fbff);
-
+  linear-gradient(180deg,#fff,#f8fbff);
   box-shadow: 0 8px 0 rgba(0,0,0,.08);
 }
 
@@ -673,15 +671,11 @@ footer p:last-child {
           rgba(0,0,0,.025) 49% 51%,
           rgba(255,255,255,.035) 51% 100%);
 
- opacity: .18;
+ opacity: .30;
 
  pointer-events: none;
 }
 
-   .bulk-calculator > * {
-       position: relative;
-       z-index: 2;
-   }
 
 .bulk-calculator h4 {
   margin: 0 0 30px;
