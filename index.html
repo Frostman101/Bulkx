@@ -139,22 +139,41 @@
   <div class="calc-grid">
     <div class="calc-field">
       <label for="calc-exv">EX / V</label>
-      <input type="number" id="calc-exv" placeholder="Enter quantity">
+      <input
+        type="text"
+        inputmode="numeric"
+        id="calc-exv"
+        placeholder="Enter quantity">
     </div>
 
     <div class="calc-field">
       <label for="calc-reverse">Reverse Holos</label>
-      <input type="number" id="calc-reverse" placeholder="Enter quantity">
+      <input
+        type="text"
+        inputmode="numeric"
+        id="calc-exv"
+        placeholder="Enter quantity">
+    </div>
     </div>
 
     <div class="calc-field">
       <label for="calc-holo">Holo Rares</label>
-      <input type="number" id="calc-holo" placeholder="Enter quantity">
+      <input
+        type="text"
+        inputmode="numeric"
+        id="calc-exv"
+        placeholder="Enter quantity">
+    </div>
     </div>
 
     <div class="calc-field">
       <label for="calc-common">Common / Uncommon</label>
-      <input type="number" id="calc-common" placeholder="Enter quantity">
+      <input
+        type="text"
+        inputmode="numeric"
+        id="calc-exv"
+        placeholder="Enter quantity">
+    </div>
     </div>
   </div>
 
@@ -165,30 +184,53 @@
   <a class="quote-btn" href="#quote">Get My Quote →</a>
 </div>
 
-      <script>
-      function getPrice(type) {
-        return Number(document.querySelector(`[data-card-type="${type}"]`).dataset.price);
-      }
+<script>
+function getPrice(type) {
+  return Number(document.querySelector(`[data-card-type="${type}"]`).dataset.price);
+}
 
-      function calculateBulkValue() {
-        const exv = Number(document.getElementById("calc-exv").value) || 0;
-        const reverse = Number(document.getElementById("calc-reverse").value) || 0;
-        const holo = Number(document.getElementById("calc-holo").value) || 0;
-        const common = Number(document.getElementById("calc-common").value) || 0;
+function calculateBulkValue() {
+  const exv =
+    Number(document.getElementById("calc-exv").value.replace(/,/g, "")) || 0;
 
-        const total =
-          exv * getPrice("exv") +
-          reverse * getPrice("reverse") +
-          holo * getPrice("holo") +
-          common * getPrice("common");
+  const reverse =
+    Number(document.getElementById("calc-reverse").value.replace(/,/g, "")) || 0;
 
-        document.getElementById("calc-total").textContent =
-          "$" + total.toFixed(2);
-      }
+  const holo =
+    Number(document.getElementById("calc-holo").value.replace(/,/g, "")) || 0;
 
-      document.querySelectorAll(".bulk-calculator input").forEach(input => {
-        input.addEventListener("input", calculateBulkValue);
-      });
+  const common =
+    Number(document.getElementById("calc-common").value.replace(/,/g, "")) || 0;
+
+  const total =
+    exv * getPrice("exv") +
+    reverse * getPrice("reverse") +
+    holo * getPrice("holo") +
+    common * getPrice("common");
+
+  document.getElementById("calc-total").textContent =
+    total.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD"
+    });
+}
+
+// ONE event listener per input
+document.querySelectorAll(".bulk-calculator input").forEach(input => {
+
+  input.addEventListener("input", function () {
+
+    let value = this.value.replace(/,/g, "");
+    value = value.replace(/\D/g, "");
+
+    this.value = value
+      ? parseInt(value, 10).toLocaleString("en-US")
+      : "";
+
+    calculateBulkValue();
+  });
+
+});
       </script>
 </section>
     <section id="how" class="how">
