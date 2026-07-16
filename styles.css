@@ -1242,6 +1242,329 @@ a {
   font-size: 34px;
   margin-bottom: 8px;
 }
+/* =========================
+   FAQ
+   ========================= */
+
+.faq-card-section {
+  padding: clamp(58px, 7vw, 94px) 4vw;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(7, 153, 241, .08), transparent 24%),
+    radial-gradient(circle at 88% 80%, rgba(255, 203, 5, .12), transparent 25%),
+    var(--surface-soft);
+}
+
+.faq-card-heading {
+  max-width: 760px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.faq-card-eyebrow {
+  margin: 0 0 8px;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.faq-card-heading h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1;
+  letter-spacing: -1.5px;
+  font-weight: 950;
+}
+
+.faq-card-heading > p:last-child {
+  max-width: 700px;
+  margin: 14px auto 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.faq-card-grid {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 22px;
+}
+
+.faq-trading-card {
+  position: relative;
+  padding: 9px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #ffe36d 0%, var(--yellow) 55%, #e6ae00 100%);
+  box-shadow:
+    0 9px 0 rgba(4, 27, 63, .14),
+    0 18px 28px rgba(4, 27, 63, .14);
+}
+
+.faq-trading-card::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  pointer-events: none;
+  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, .85);
+  border-radius: 17px;
+}
+
+.faq-card-item {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 17px;
+  background:
+    linear-gradient(rgba(255, 255, 255, .93), rgba(255, 255, 255, .93)),
+    radial-gradient(
+      circle at 90% 18%,
+      transparent 0 29px,
+      rgba(4, 27, 63, .13) 30px 36px,
+      transparent 37px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0 46%,
+      rgba(4, 27, 63, .12) 46% 54%,
+      transparent 54%
+    );
+}
+
+.faq-card-item::after {
+  content: "BX";
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
+  color: rgba(4, 27, 63, .06);
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 950;
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.faq-card-item summary {
+  position: relative;
+  z-index: 3;
+  min-height: 82px;
+  padding: 17px 58px 17px 18px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-card-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-card-icon {
+  width: 41px;
+  height: 41px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: var(--red);
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--navy);
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.faq-card-question {
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.22;
+  font-weight: 950;
+}
+
+.faq-card-toggle {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: var(--navy);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.faq-card-toggle::before {
+  content: "+";
+}
+
+.faq-card-item[open] .faq-card-toggle {
+  color: var(--navy);
+  background: var(--yellow);
+}
+
+.faq-card-item[open] .faq-card-toggle::before {
+  content: "−";
+}
+
+.faq-card-item summary:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: -5px;
+  border-radius: 15px;
+}
+
+.faq-card-type-line {
+  position: relative;
+  z-index: 3;
+  height: 7px;
+  margin: 0 15px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
+}
+
+.faq-card-answer {
+  position: relative;
+  z-index: 3;
+  margin: 0 15px 15px;
+  padding: 18px;
+  color: #334258;
+  background: rgba(255, 255, 255, .87);
+  border: 2px solid rgba(4, 27, 63, .15);
+  border-radius: 13px;
+  font-size: 15.5px;
+  line-height: 1.58;
+}
+
+.faq-card-answer p {
+  margin: 0;
+}
+
+.faq-card-answer p + p {
+  margin-top: 12px;
+}
+
+.faq-card-answer strong {
+  color: var(--navy);
+  font-weight: 950;
+}
+
+.faq-card-answer ul {
+  margin: 11px 0 0;
+  padding-left: 21px;
+}
+
+.faq-card-answer li + li {
+  margin-top: 5px;
+}
+
+.faq-card-subsection + .faq-card-subsection {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(4, 27, 63, .16);
+}
+
+.faq-card-subsection h3 {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.faq-card-checklist {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.faq-card-checklist li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.faq-card-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--deep-blue);
+  font-weight: 950;
+}
+
+.faq-card-footer {
+  max-width: 1220px;
+  margin: 30px auto 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: var(--navy);
+  border: 5px solid var(--yellow);
+  border-radius: 22px;
+  box-shadow: 0 7px 0 rgba(4, 27, 63, .16);
+  font-weight: 850;
+}
+
+.faq-card-footer a {
+  min-height: 46px;
+  margin-top: 12px;
+  padding: 0 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  background: var(--yellow);
+  border: 3px solid white;
+  border-radius: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.faq-card-footer a:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 850px) {
+  .faq-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .faq-card-section {
+    padding-inline: 14px;
+  }
+
+  .faq-card-heading {
+    margin-bottom: 27px;
+  }
+
+  .faq-card-item summary {
+    padding: 15px 54px 15px 15px;
+  }
+
+  .faq-card-question {
+    font-size: 16px;
+  }
+
+  .faq-card-answer {
+    margin-inline: 12px;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .faq-card-type-line {
+    margin-inline: 12px;
+  }
+}
 
 /* =========================
    Quote Form
