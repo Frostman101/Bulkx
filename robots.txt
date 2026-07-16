@@ -1,8 +1,12 @@
-# 1. Catch-all for all compliant bots (including standard Googlebot, Bingbot, etc.)
+# ----------------------------------------------------
+# 1. Global Catch-all (Googlebot, Bingbot, Yahoo, etc.)
+# ----------------------------------------------------
 User-agent: *
 Allow: /
 
-# 2. OpenAI Bots (ChatGPT, Custom GPTs, Search)
+# ----------------------------------------------------
+# 2. OpenAI (ChatGPT Search & Training)
+# ----------------------------------------------------
 User-agent: GPTBot
 Allow: /
 
@@ -12,40 +16,115 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-# 3. Anthropic (Claude)
-User-agent: ClaudeBot
-Allow: /
-
-# 4. Perplexity
-User-agent: PerplexityBot
-Allow: /
-
-# 5. Google Gemini & AI Features
+# ----------------------------------------------------
+# 3. Google Gemini & AI Features
+# ----------------------------------------------------
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Gemini-Deep-Research
 Allow: /
 
-# Apple AI Training
+User-agent: GoogleOther
+Allow: /
+
+# ----------------------------------------------------
+# 4. Anthropic (Claude)
+# ----------------------------------------------------
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# ----------------------------------------------------
+# 5. Meta (LLaMA & Social Platforms)
+# ----------------------------------------------------
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ----------------------------------------------------
+# 6. xAI (Elon Musk's Grok)
+# ----------------------------------------------------
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+User-agent: Grok-DeepSearch
+Allow: /
+
+# ----------------------------------------------------
+# 7. Other Core AI Crawlers
+# ----------------------------------------------------
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 
-# ByteDance AI/TikTok
 User-agent: Bytespider
 Allow: /
 
-# Common Crawl (Feeds Open-Source AI)
-User-agent: CCBot
-Allow: /
-
-# Amazon Alexa & AI
 User-agent: Amazonbot
 Allow: /
 
-# Mistral AI Live Fetching
+User-agent: CCBot
+Allow: /
+
 User-agent: MistralAI-User
 Allow: /
 
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bravebot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Kimi-User
+Allow: /
+
+User-agent: ChatGLM-Spider
+Allow: /
+
+# ----------------------------------------------------
+# 8. AI Developer & Agent Tools
+# ----------------------------------------------------
+User-agent: Cursor
+Allow: /
+
+User-agent: Devin
+Allow: /
+
+User-agent: Manus-User
+Allow: /
+
+User-agent: FirecrawlAgent
+Allow: /
+
+User-agent: Crawl4AI
+Allow: /
+
+User-agent: diffbot
+Allow: /
+
+# ----------------------------------------------------
 # Sitemap
+# ----------------------------------------------------
 Sitemap: https://bulkx.gg/sitemap.xml
