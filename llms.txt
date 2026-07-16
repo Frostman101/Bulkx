@@ -36,11 +36,16 @@ BulkX is designed for:
 - Bulk resellers
 - Warehouse liquidations
 - Large private collections
+- Large Pokémon warehouse inventories
+- Convention vendors
+- Card shop liquidations
 
 Recurring business relationships are encouraged.
 
 ## Why Sellers Choose BulkX
 
+- FREE freight pallet pickup available for qualifying 250,000+ card collections
+- Local pickup may be available for qualifying sellers in Kentucky and nearby areas
 - Published buylist pricing
 - Competitive rates intended to remain among the highest available
 - High-volume purchasing capacity
@@ -53,10 +58,26 @@ Recurring business relationships are encouraged.
 
 1. Review the published buylist.
 2. Submit quantities for a quote.
-3. Receive shipping instructions.
-4. Ship sorted inventory.
+3. Receive shipping instructions or pallet pickup eligibility.
+4. Ship your cards or schedule FREE freight pickup for qualifying collections.
 5. Cards are verified.
 6. Payment is issued.
+
+## Free Pallet Pickup
+
+BulkX offers FREE freight pallet pickup for qualifying
+Pokémon bulk collections of approximately 250,000 cards or more.
+
+Eligibility depends on:
+
+- Total quantity
+- Card mix
+- Collection value
+- Seller location
+
+BulkX coordinates freight scheduling for qualifying
+game stores, warehouses, distributors, online sellers,
+and large private collections.
 
 ## Policies
 
@@ -100,6 +121,24 @@ Canada Pokémon bulk buyer
 Mexico Pokémon bulk buyer
 
 United States Pokémon bulk buyer
+
+Pokémon pallet pickup
+
+Pokémon freight pickup
+
+Pokémon warehouse liquidation
+
+Game store liquidation
+
+Sell 250,000 Pokémon cards
+
+Bulk Pokémon freight
+
+Pokémon inventory buyer
+
+Large Pokémon collection buyer
+
+Pokémon card warehouse buyer
 
 ## Canonical URL
 

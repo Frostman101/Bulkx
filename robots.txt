@@ -1,19 +1,51 @@
+# 1. Catch-all for all compliant bots (including standard Googlebot, Bingbot, etc.)
 User-agent: *
 Allow: /
 
-User-agent: OAI-SearchBot
-Allow: /
-
+# 2. OpenAI Bots (ChatGPT, Custom GPTs, Search)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# 3. Anthropic (Claude)
 User-agent: ClaudeBot
 Allow: /
 
+# 4. Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+# 5. Google Gemini & AI Features
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-Deep-Research
+Allow: /
+
+# Apple AI Training
+User-agent: Applebot-Extended
+Allow: /
+
+# ByteDance AI/TikTok
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (Feeds Open-Source AI)
+User-agent: CCBot
+Allow: /
+
+# Amazon Alexa & AI
+User-agent: Amazonbot
+Allow: /
+
+# Mistral AI Live Fetching
+User-agent: MistralAI-User
+Allow: /
+
+# Sitemap
 Sitemap: https://bulkx.gg/sitemap.xml
