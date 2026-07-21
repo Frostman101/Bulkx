@@ -911,3 +911,85 @@
 .shipping-page .spaced-card {
   margin-top: 18px;
 }
+
+/* =========================================================
+   MOBILE OVERFLOW FIX
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  /* Keep the shipping page inside the phone viewport */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .shipping-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Mobile header */
+  .shipping-page .nav {
+    width: 100%;
+    max-width: 100%;
+    gap: 18px;
+    padding: 18px 16px;
+  }
+
+  .shipping-page .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 100%;
+    gap: 14px 12px;
+  }
+
+  .shipping-page .nav-links a {
+    min-width: 0;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Put the fifth navigation item across the full bottom row */
+  .shipping-page .nav-links a:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Header contact button */
+  .shipping-page .nav > .quote-btn {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /* Bottom submission section */
+  .shipping-page .submission-cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 44px 0;
+  }
+
+  .shipping-page .submission-cta .quote-btn {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 14px 18px;
+    white-space: normal;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .shipping-page .submission-cta h2,
+  .shipping-page .submission-cta p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
