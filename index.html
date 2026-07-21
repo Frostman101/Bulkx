@@ -1,24 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
   <!-- =========================================================
        BULKX - Document Setup
        ========================================================= -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>BULKX — Pokémon Bulk Buylist</title>
-
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BULKX — Pokémon Bulk Buylist
+  </title>
   <!-- Favicon files -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="favicon.png" type="image/png" />
-
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="favicon.png" rel="icon" type="image/png"/>
   <!-- Main stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-
+  <link href="styles.css" rel="stylesheet"/>
   <!-- Schema -->
   <script type="application/ld+json">
-{
+   {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -161,124 +159,123 @@
     }
   ]
 }
-</script>
-</head>
-
-<body>
+  </script>
+ </head>
+ <body>
   <!-- =========================================================
        Header / Navigation
        ========================================================= -->
   <header class="nav">
-    <a class="brand" href="/" aria-label="BulkX Home">
-      <img
-          src="BulkX-Logo.svg"
-          alt="BulkX"
-          class="brand-logo"
-      >
-  </a>
-
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#buylist">Buylist</a>
-      <a href="#how">How It Works</a>
-      <a href="#payments">Payment Methods</a>
-    </nav>
-
-    <a class="quote-btn" href="#quote">Contact Us →</a>
+   <a aria-label="BulkX Home" class="brand" href="/">
+    <img alt="BulkX" class="brand-logo" src="BulkX-Logo.svg"/>
+   </a>
+   <nav aria-label="Main navigation" class="nav-links">
+    <a href="#buylist">
+     Buylist
+    </a>
+    <a href="#how">
+     How It Works
+    </a>
+    <a href="#payments">
+     Payment Methods
+    </a>
+   </nav>
+   <a class="quote-btn" href="#quote">
+    Contact Us →
+   </a>
   </header>
-
   <main>
-    <!-- =========================================================
+   <!-- =========================================================
          Hero Section
          ========================================================= -->
-    <section class="hero">
-      <!-- Decorative background layers -->
-      <div class="hero-pattern" aria-hidden="true"></div>
-      <div class="hero-rays" aria-hidden="true"></div>
-
-      <!-- Decorative hero Pokéball -->
-      <div class="pokeball" aria-hidden="true">
-        <div class="pokeball-band"></div>
-        <div class="pokeball-button"></div>
-        <div class="pokeball-shine"></div>
-      </div>
-
-      <div class="yellow-swoosh" aria-hidden="true"></div>
-
-      <!-- Hero copy -->
-      <div class="hero-content">
-        <h1 class="hero-logo">
-        <img
-            src="BulkX-Logo.svg"
-            alt="BulkX"
-            class="hero-logo-img"
-        >
-    </h1>
-        <h2>Trade In Your Pokémon Bulk</h2>
-        <p>The fastest way for stores, collectors, and breakers to turn bulk into cash.</p>
-
-        <div class="hero-actions">
-          <a class="quote-btn" href="#quote">Contact Us →</a>
-          <a class="outline-btn" href="#buylist">View Buylist</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
+   <section class="hero">
+    <!-- Decorative background layers -->
+    <div aria-hidden="true" class="hero-pattern">
+    </div>
+    <div aria-hidden="true" class="hero-rays">
+    </div>
+    <!-- Decorative hero Pokéball -->
+    <div aria-hidden="true" class="pokeball">
+     <div class="pokeball-band">
+     </div>
+     <div class="pokeball-button">
+     </div>
+     <div class="pokeball-shine">
+     </div>
+    </div>
+    <div aria-hidden="true" class="yellow-swoosh">
+    </div>
+    <!-- Hero copy -->
+    <div class="hero-content">
+     <h1 class="hero-logo">
+      <img alt="BulkX" class="hero-logo-img" src="BulkX-Logo.svg"/>
+     </h1>
+     <h2>
+      Trade In Your Pokémon Bulk
+     </h2>
+     <p>
+      The fastest way for stores, collectors, and breakers to turn bulk into cash.
+     </p>
+     <div class="hero-actions">
+      <a class="quote-btn" href="#quote">
+       Contact Us →
+      </a>
+      <a class="outline-btn" href="#buylist">
+       View Buylist
+      </a>
+     </div>
+    </div>
+   </section>
+   <!-- =========================================================
          Buylist Section
          - data-card-type and data-price power the calculator.
          - Update card prices here when your buylist changes.
          ========================================================= -->
-    <section id="buylist" class="buylist">
-      <div class="section-title">
-        <img src="pokeball_bullet.svg" class="section-ball" alt="" />
-        <h3>Pokémon Buylist</h3>
-        <img src="pokeball_bullet.svg" class="section-ball" alt="" />
+   <section class="buylist" id="buylist">
+    <div class="section-title">
+     <img alt="" class="section-ball" src="pokeball_bullet.svg">
+      <h3>
+       Pokémon Buylist
+      </h3>
+      <img alt="" class="section-ball" src="pokeball_bullet.svg">
+      </img>
+     </img>
+    </div>
+    <div class="buy-grid">
+     <!-- EX Card -->
+     <article class="buy-card purple" data-card-type="exv" data-price="0.70">
+      <div class="buy-icon">
+       <svg aria-label="Purple EX icon" role="img" viewbox="0 0 120 120">
+        <polygon points="60 8 75 39 109 26 95 61 113 91 78 86 60 113 42 86 7 91 25 61 11 26 45 39">
+        </polygon>
+        <circle cx="60" cy="62" r="25">
+        </circle>
+        <circle cx="60" cy="62" r="10">
+        </circle>
+       </svg>
       </div>
-
-      <div class="buy-grid">
-        <!-- EX Card -->
-        <article class="buy-card purple" data-card-type="exv" data-price="0.70">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Purple EX icon">
-              <polygon points="60 8 75 39 109 26 95 61 113 91 78 86 60 113 42 86 7 91 25 61 11 26 45 39" />
-              <circle cx="60" cy="62" r="25" />
-              <circle cx="60" cy="62" r="10" />
-            </svg>
-          </div>
-
-          <div class="buy-copy">
-            <h4>Pokemon EX</h4>
-            <strong>$0.70</strong>
-            <p>Per 1000 / $700</p>
-          </div>
-        </article>
-
-        <!-- V Card -->
-        <article class="buy-card purple-2" data-card-type="exv" data-price="0.70">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Purple V icon">
-              <svg
-                x="10"
-                y="10"
-                width="100"
-                height="100"
-                viewBox="0 0 1280 1278"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <!-- Purple background -->
-                <ellipse
-                  cx="640"
-                  cy="639"
-                  rx="640"
-                  ry="639"
-                  fill="#9153A0"
-                />
-
-                <!-- Exact traced black Psychic symbol -->
-                <path
-                  fill="#040609"
-                  fill-rule="evenodd"
-                  d="
+      <div class="buy-copy">
+       <h4>
+        Pokemon EX
+       </h4>
+       <strong>
+        $0.70
+       </strong>
+       <p>
+        Per 1000 / $700
+       </p>
+      </div>
+     </article>
+     <!-- V Card -->
+     <article class="buy-card purple-2" data-card-type="exv" data-price="0.70">
+      <div class="buy-icon">
+       <svg aria-label="Purple V icon" role="img" viewbox="0 0 120 120">
+        <svg height="100" preserveaspectratio="xMidYMid meet" viewbox="0 0 1280 1278" width="100" x="10" y="10">
+         <!-- Purple background -->
+         <ellipse cx="640" cy="639" fill="#9153A0" rx="640" ry="639">
+         </ellipse>
+         <!-- Exact traced black Psychic symbol -->
+         <path d="
                     M708 266
                     L652 262
                     L610 263
@@ -483,598 +480,859 @@
                     L192 713
                     L186 699
                     Z
-                  "
-                />
-              </svg>
-            </svg>
-          </div>
-
-          <div class="buy-copy">
-            <h4>Pokemon V</h4>
-            <strong>$0.70</strong>
-            <p>Per 1000 / $700</p>
-          </div>
-        </article>
-
-        <!-- Reverse Holos Card -->
-        <article class="buy-card blue" data-card-type="reverse" data-price="0.055">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Blue reverse holo icon">
-              <path d="M82 7C60 26 24 33 16 69c-7 31 15 46 43 43 34-4 47-37 34-66-5-12-10-24-11-39Z" />
-              <path class="spark" d="M62 45l8 18 19 8-19 8-8 19-8-19-18-8 18-8 8-18Z" />
-            </svg>
-          </div>
-
-          <div class="buy-copy">
-            <h4>Reverse Holos</h4>
-            <strong>$55.00</strong>
-            <p>per 1000 / $0.055 each</p>
-          </div>
-        </article>
-
-        <!-- Holo Rares Card -->
-        <article class="buy-card black" data-card-type="holo" data-price="0.055">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Black and yellow holo rare icon">
-              <circle cx="60" cy="60" r="53" />
-              <path class="gold" d="M60 12l13 34 35 14-35 14-13 34-14-34-34-14 34-14 14-34Z" />
-              <path class="gold small-a" d="M92 20l5 11 11 5-11 5-5 11-5-11-11-5 11-5 5-11Z" />
-              <path class="gold small-b" d="M24 75l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z" />
-            </svg>
-          </div>
-
-          <div class="buy-copy">
-            <h4>Holo Rares</h4>
-            <strong>$55.00</strong>
-            <p>per 1000 / $0.055 each</p>
-          </div>
-        </article>
-
-        <!-- Common / Uncommon Card -->
-        <article class="buy-card red" data-card-type="common" data-price="0.025">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Common / Uncommon icon">
-              <g transform="translate(0 6) scale(1.08)">
-                <!-- Left finger -->
-                <path d="M14.1 7.7 L12.3 9.0 L12.3 38.6 L13.6 39.9 L28.2 39.9 L29.5 38.6 L29.5 9.4 L27.7 7.7 Z" />
-
-                <!-- Middle left finger -->
-                <path d="M35.0 3.0 L34.5 39.0 L35.5 39.9 L50.5 39.9 L51.8 38.1 L51.4 3.4 L49.5 2.6 Z" />
-
-                <!-- Middle right finger -->
-                <path d="M57.3 3.0 L56.4 4.3 L56.4 38.1 L57.7 39.9 L72.7 39.9 L73.6 39.0 L73.6 3.9 L71.8 2.6 Z" />
-
-                <!-- Right finger -->
-                <path d="M80.5 7.7 L78.6 9.4 L78.6 38.6 L80.0 39.9 L94.5 39.9 L95.9 38.6 L95.9 9.0 L94.1 7.7 Z" />
-
-                <!-- Left palm -->
-                <path d="M12.3 76.7 L13.2 77.6 L32.3 77.6 L36.4 74.6 L36.4 60.4 L38.2 58.7 L54.1 58.3 L54.5 46.7 L53.6 45.9 L13.2 45.9 L12.3 47.1 Z" />
-
-                <!-- Right palm -->
-                <path d="M95.5 46.3 L64.1 45.9 L63.2 46.7 L63.2 65.1 L61.4 66.9 L45.9 66.9 L45.0 67.7 L45.0 78.4 L43.2 80.6 L35.9 84.9 L35.9 88.7 L37.3 89.6 L73.6 89.6 L75.0 88.7 L75.0 83.6 L79.5 78.0 L95.0 77.6 L95.9 76.7 Z" />
-              </g>
-            </svg>
-          </div>
-
-          <div class="buy-copy">
-            <h4>Common / Uncommon</h4>
-            <strong>$25.00</strong>
-            <p>per 1000 / $0.025 each</p>
-          </div>
-        </article>
-
-        <!-- Energy Card -->
-        <article class="buy-card yellow" data-card-type="energy" data-price="0.005">
-          <div class="buy-icon">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Electric Energy icon">
-              <!-- Yellow Energy -->
-              <circle cx="60" cy="60" r="53" fill="#FFCB05"/>
-
-              <!-- Lightning -->
-              <path
-              d="M83 12L30 58H55L42 108L90 48H67Z"
-              fill="#000"/>
-            </svg>
-          </div>
-
-  <div class="buy-copy">
-    <h4>Energy</h4>
-    <strong>$5.00</strong>
-    <p>per 1000 / $0.005 each</p>
-  </div>
-</article>
+                  " fill="#040609" fill-rule="evenodd">
+         </path>
+        </svg>
+       </svg>
       </div>
-
-      <!-- =========================================================
+      <div class="buy-copy">
+       <h4>
+        Pokemon V
+       </h4>
+       <strong>
+        $0.70
+       </strong>
+       <p>
+        Per 1000 / $700
+       </p>
+      </div>
+     </article>
+     <!-- Reverse Holos Card -->
+     <article class="buy-card blue" data-card-type="reverse" data-price="0.055">
+      <div class="buy-icon">
+       <svg aria-label="Blue reverse holo icon" role="img" viewbox="0 0 120 120">
+        <path d="M82 7C60 26 24 33 16 69c-7 31 15 46 43 43 34-4 47-37 34-66-5-12-10-24-11-39Z">
+        </path>
+        <path class="spark" d="M62 45l8 18 19 8-19 8-8 19-8-19-18-8 18-8 8-18Z">
+        </path>
+       </svg>
+      </div>
+      <div class="buy-copy">
+       <h4>
+        Reverse Holos
+       </h4>
+       <strong>
+        $55.00
+       </strong>
+       <p>
+        per 1000 / $0.055 each
+       </p>
+      </div>
+     </article>
+     <!-- Holo Rares Card -->
+     <article class="buy-card black" data-card-type="holo" data-price="0.055">
+      <div class="buy-icon">
+       <svg aria-label="Black and yellow holo rare icon" role="img" viewbox="0 0 120 120">
+        <circle cx="60" cy="60" r="53">
+        </circle>
+        <path class="gold" d="M60 12l13 34 35 14-35 14-13 34-14-34-34-14 34-14 14-34Z">
+        </path>
+        <path class="gold small-a" d="M92 20l5 11 11 5-11 5-5 11-5-11-11-5 11-5 5-11Z">
+        </path>
+        <path class="gold small-b" d="M24 75l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z">
+        </path>
+       </svg>
+      </div>
+      <div class="buy-copy">
+       <h4>
+        Holo Rares
+       </h4>
+       <strong>
+        $55.00
+       </strong>
+       <p>
+        per 1000 / $0.055 each
+       </p>
+      </div>
+     </article>
+     <!-- Common / Uncommon Card -->
+     <article class="buy-card red" data-card-type="common" data-price="0.025">
+      <div class="buy-icon">
+       <svg aria-label="Common / Uncommon icon" role="img" viewbox="0 0 120 120">
+        <g transform="translate(0 6) scale(1.08)">
+         <!-- Left finger -->
+         <path d="M14.1 7.7 L12.3 9.0 L12.3 38.6 L13.6 39.9 L28.2 39.9 L29.5 38.6 L29.5 9.4 L27.7 7.7 Z">
+         </path>
+         <!-- Middle left finger -->
+         <path d="M35.0 3.0 L34.5 39.0 L35.5 39.9 L50.5 39.9 L51.8 38.1 L51.4 3.4 L49.5 2.6 Z">
+         </path>
+         <!-- Middle right finger -->
+         <path d="M57.3 3.0 L56.4 4.3 L56.4 38.1 L57.7 39.9 L72.7 39.9 L73.6 39.0 L73.6 3.9 L71.8 2.6 Z">
+         </path>
+         <!-- Right finger -->
+         <path d="M80.5 7.7 L78.6 9.4 L78.6 38.6 L80.0 39.9 L94.5 39.9 L95.9 38.6 L95.9 9.0 L94.1 7.7 Z">
+         </path>
+         <!-- Left palm -->
+         <path d="M12.3 76.7 L13.2 77.6 L32.3 77.6 L36.4 74.6 L36.4 60.4 L38.2 58.7 L54.1 58.3 L54.5 46.7 L53.6 45.9 L13.2 45.9 L12.3 47.1 Z">
+         </path>
+         <!-- Right palm -->
+         <path d="M95.5 46.3 L64.1 45.9 L63.2 46.7 L63.2 65.1 L61.4 66.9 L45.9 66.9 L45.0 67.7 L45.0 78.4 L43.2 80.6 L35.9 84.9 L35.9 88.7 L37.3 89.6 L73.6 89.6 L75.0 88.7 L75.0 83.6 L79.5 78.0 L95.0 77.6 L95.9 76.7 Z">
+         </path>
+        </g>
+       </svg>
+      </div>
+      <div class="buy-copy">
+       <h4>
+        Common / Uncommon
+       </h4>
+       <strong>
+        $25.00
+       </strong>
+       <p>
+        per 1000 / $0.025 each
+       </p>
+      </div>
+     </article>
+     <!-- Energy Card -->
+     <article class="buy-card yellow" data-card-type="energy" data-price="0.005">
+      <div class="buy-icon">
+       <svg aria-label="Electric Energy icon" role="img" viewbox="0 0 120 120">
+        <!-- Yellow Energy -->
+        <circle cx="60" cy="60" fill="#FFCB05" r="53">
+        </circle>
+        <!-- Lightning -->
+        <path d="M83 12L30 58H55L42 108L90 48H67Z" fill="#000">
+        </path>
+       </svg>
+      </div>
+      <div class="buy-copy">
+       <h4>
+        Energy
+       </h4>
+       <strong>
+        $5.00
+       </strong>
+       <p>
+        per 1000 / $0.005 each
+       </p>
+      </div>
+     </article>
+    </div>
+    <!-- =========================================================
            Bulk Calculator
            - Reads prices from data-price attributes above.
            - Input fields auto-format with commas.
            ========================================================= -->
-      <div class="bulk-calculator">
-        <h4>Estimate Your Bulk Value</h4>
-
-        <div class="calc-grid">
-          <div class="calc-field">
-            <label for="calc-exv">EX / V</label>
-            <input type="text" inputmode="numeric" id="calc-exv" placeholder="Enter quantity" />
-          </div>
-
-          <div class="calc-field">
-            <label for="calc-reverse">Reverse Holos</label>
-            <input type="text" inputmode="numeric" id="calc-reverse" placeholder="Enter quantity" />
-          </div>
-
-          <div class="calc-field">
-            <label for="calc-holo">Holo Rares</label>
-            <input type="text" inputmode="numeric" id="calc-holo" placeholder="Enter quantity" />
-          </div>
-
-          <div class="calc-field">
-            <label for="calc-common">Common / Uncommon</label>
-            <input type="text" inputmode="numeric" id="calc-common" placeholder="Enter quantity" />
-          </div>
-
-          <div class="calc-field">
-            <label for="calc-energy">Energy</label>
-            <input
-            type="text"
-            inputmode="numeric"
-            id="calc-energy"
-            placeholder="Enter quantity"
-            />
-          </div>
-        </div>
-
-        <div class="calc-total">
-          Estimated Payout: <span id="calc-total">$0.00</span>
-        </div>
-
-        <a class="quote-btn" href="#quote">Get My Quote →</a>
+    <div class="bulk-calculator">
+     <h4>
+      Estimate Your Bulk Value
+     </h4>
+     <div class="calc-grid">
+      <div class="calc-field">
+       <label for="calc-exv">
+        EX / V
+       </label>
+       <input id="calc-exv" inputmode="numeric" placeholder="Enter quantity" type="text"/>
       </div>
-    </section>
-    <!-- =========================================================
+      <div class="calc-field">
+       <label for="calc-reverse">
+        Reverse Holos
+       </label>
+       <input id="calc-reverse" inputmode="numeric" placeholder="Enter quantity" type="text"/>
+      </div>
+      <div class="calc-field">
+       <label for="calc-holo">
+        Holo Rares
+       </label>
+       <input id="calc-holo" inputmode="numeric" placeholder="Enter quantity" type="text"/>
+      </div>
+      <div class="calc-field">
+       <label for="calc-common">
+        Common / Uncommon
+       </label>
+       <input id="calc-common" inputmode="numeric" placeholder="Enter quantity" type="text"/>
+      </div>
+      <div class="calc-field">
+       <label for="calc-energy">
+        Energy
+       </label>
+       <input id="calc-energy" inputmode="numeric" placeholder="Enter quantity" type="text"/>
+      </div>
+     </div>
+     <div class="calc-total">
+      Estimated Payout:
+      <span id="calc-total">
+       $0.00
+      </span>
+     </div>
+     <a class="quote-btn" href="#quote">
+      Get My Quote →
+     </a>
+    </div>
+   </section>
+   <!-- =========================================================
          Free Pallet Pickup
          Place this immediately after the closing </section> for .hero
          and before the Buylist section.
          ========================================================= -->
-    <section class="pallet-pickup" aria-labelledby="pallet-pickup-title">
-      <div class="pallet-card">
-        <div class="pallet-art" aria-hidden="true">
-          <svg class="pallet-truck" viewBox="0 0 260 170" role="presentation">
-            <path class="truck-speed" d="M12 54h58M4 78h62M20 102h46" />
-            <path class="truck-box" d="M65 35h112v82H65z" />
-            <path class="truck-cab" d="M177 68h41l27 31v18h-68z" />
-            <path class="truck-window" d="M191 77h22l18 21h-40z" />
-            <path class="truck-line" d="M65 91h112" />
-            <circle class="truck-wheel" cx="102" cy="125" r="23" />
-            <circle class="truck-wheel" cx="211" cy="125" r="23" />
-            <circle class="truck-hub" cx="102" cy="125" r="8" />
-            <circle class="truck-hub" cx="211" cy="125" r="8" />
-            <circle class="truck-ball" cx="121" cy="75" r="23" />
-            <path class="truck-ball-line" d="M98 75h46" />
-            <circle class="truck-ball-button" cx="121" cy="75" r="7" />
-          </svg>
-        </div>
-
-        <div class="pallet-copy">
-          <p class="pallet-eyebrow">Large-volume seller program</p>
-          <h2 id="pallet-pickup-title">
-            <span>Free Pallet Pickup</span>
-            <strong>250,000+ Cards</strong>
-          </h2>
-          <p class="pallet-lead">
-            Have a pallet-sized Pokémon bulk collection? BulkX can arrange and pay
+   <section aria-labelledby="pallet-pickup-title" class="pallet-pickup">
+    <div class="pallet-card">
+     <div aria-hidden="true" class="pallet-art">
+      <svg class="pallet-truck" role="presentation" viewbox="0 0 260 170">
+       <path class="truck-speed" d="M12 54h58M4 78h62M20 102h46">
+       </path>
+       <path class="truck-box" d="M65 35h112v82H65z">
+       </path>
+       <path class="truck-cab" d="M177 68h41l27 31v18h-68z">
+       </path>
+       <path class="truck-window" d="M191 77h22l18 21h-40z">
+       </path>
+       <path class="truck-line" d="M65 91h112">
+       </path>
+       <circle class="truck-wheel" cx="102" cy="125" r="23">
+       </circle>
+       <circle class="truck-wheel" cx="211" cy="125" r="23">
+       </circle>
+       <circle class="truck-hub" cx="102" cy="125" r="8">
+       </circle>
+       <circle class="truck-hub" cx="211" cy="125" r="8">
+       </circle>
+       <circle class="truck-ball" cx="121" cy="75" r="23">
+       </circle>
+       <path class="truck-ball-line" d="M98 75h46">
+       </path>
+       <circle class="truck-ball-button" cx="121" cy="75" r="7">
+       </circle>
+      </svg>
+     </div>
+     <div class="pallet-copy">
+      <p class="pallet-eyebrow">
+       Large-volume seller program
+      </p>
+      <h2 id="pallet-pickup-title">
+       <span>
+        Free Pallet Pickup
+       </span>
+       <strong>
+        250,000+ Cards
+       </strong>
+      </h2>
+      <p class="pallet-lead">
+       Have a pallet-sized Pokémon bulk collection? BulkX can arrange and pay
             for freight pickup directly from qualifying game stores, businesses,
             and high-volume sellers.
-          </p>
-
-          <ul class="pallet-benefits">
-            <li>We arrange the freight</li>
-            <li>Pickup from your location</li>
-            <li>No parcel-shipping hassle</li>
-          </ul>
-        </div>
-
-        <div class="pallet-action">
-          <div class="pallet-badge">
-            <span>250K+</span>
-            <small>cards</small>
-          </div>
-          <a class="quote-btn pallet-button" href="#quote">Request Pallet Pickup →</a>
-          <p>Final eligibility depends on card mix, condition, location, and confirmed quantity.</p>
-        </div>
+      </p>
+      <ul class="pallet-benefits">
+       <li>
+        We arrange the freight
+       </li>
+       <li>
+        Pickup from your location
+       </li>
+       <li>
+        No parcel-shipping hassle
+       </li>
+      </ul>
+     </div>
+     <div class="pallet-action">
+      <div class="pallet-badge">
+       <span>
+        250K+
+       </span>
+       <small>
+        cards
+       </small>
       </div>
-    </section>
-    <!-- =========================================================
+      <a class="quote-btn pallet-button" href="#quote">
+       Request Pallet Pickup →
+      </a>
+      <p>
+       Final eligibility depends on card mix, condition, location, and confirmed quantity.
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- =========================================================
          How It Works Section
          ========================================================= -->
-    <section id="how" class="how">
-      <div class="boxed-section">
-        <div class="section-title dark">
-          <span></span>
-          <h3>How It Works</h3>
-          <span></span>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-icon">📋</div>
-            <h4>Submit Inventory</h4>
-            <p>Send your bulk counts through the quote form.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-icon">💵</div>
-            <h4>Receive Quote</h4>
-            <p>We confirm the buylist value and preferred payment method.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-icon">📦</div>
-            <h4>Ship Cards or Schedule Pickup</h4>
-            <p>After we confirm your order, ship your cards or, for qualifying 250K+ card collections, we'll arrange FREE freight pallet pickup.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-icon">🏦</div>
-            <h4>Get Paid</h4>
-            <p>Get paid through PayPal after verification.</p>
-          </div>
-        </div>
+   <section class="how" id="how">
+    <div class="boxed-section">
+     <div class="section-title dark">
+      <span>
+      </span>
+      <h3>
+       How It Works
+      </h3>
+      <span>
+      </span>
+     </div>
+     <div class="steps">
+      <div class="step">
+       <div class="step-number">
+        1
+       </div>
+       <div class="step-icon">
+        📋
+       </div>
+       <h4>
+        Submit Inventory
+       </h4>
+       <p>
+        Send your bulk counts through the quote form.
+       </p>
       </div>
-    </section>
-
-    <!-- =========================================================
+      <div class="step">
+       <div class="step-number">
+        2
+       </div>
+       <div class="step-icon">
+        💵
+       </div>
+       <h4>
+        Receive Quote
+       </h4>
+       <p>
+        We confirm the buylist value and preferred payment method.
+       </p>
+      </div>
+      <div class="step">
+       <div class="step-number">
+        3
+       </div>
+       <div class="step-icon">
+        📦
+       </div>
+       <h4>
+        Ship Cards or Schedule Pickup
+       </h4>
+       <p>
+        After we confirm your order, ship your cards or, for qualifying 250K+ card collections, we'll arrange FREE freight pallet pickup.
+       </p>
+      </div>
+      <div class="step">
+       <div class="step-number">
+        4
+       </div>
+       <div class="step-icon">
+        🏦
+       </div>
+       <h4>
+        Get Paid
+       </h4>
+       <p>
+        Get paid through PayPal after verification.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- =========================================================
+         Shipping Guide
+         ========================================================= -->
+   <section class="shipping-guide">
+    <div class="boxed-section">
+     <div class="section-title dark">
+      <span>
+      </span>
+      <h3>
+       First Time Shipping Pokémon Bulk?
+      </h3>
+      <span>
+      </span>
+     </div>
+     <div class="shipping-guide-card">
+      <div class="shipping-guide-icon">
+       📦
+      </div>
+      <div class="shipping-guide-copy">
+       <h4>
+        Shipping Instructions
+       </h4>
+       <p>
+        Learn how to prepare your shipment, pack USPS Large Flat Rate
+              boxes, organize different card categories, print your buylist,
+              and qualify for FREE pallet pickup on large collections.
+       </p>
+      </div>
+      <a class="quote-btn" href="/shipping-instructions.html">
+       View Shipping Guide →
+      </a>
+     </div>
+    </div>
+   </section>
+   <!-- =========================================================
          Payment Methods Section
          ========================================================= -->
-    <section id="payments" class="payments">
-      <h3>Payment Methods</h3>
-      <p>Simple order coordination without a seller portal. Track each deal directly through your message thread and payment app.</p>
-
-      <div class="payment-pills">
-        <span>PayPal</span>
-      </div>
-    </section>
-
-    <!-- =========================================================
+   <section class="payments" id="payments">
+    <h3>
+     Payment Methods
+    </h3>
+    <p>
+     Simple order coordination without a seller portal. Track each deal directly through your message thread and payment app.
+    </p>
+    <div class="payment-pills">
+     <span>
+      PayPal
+     </span>
+    </div>
+   </section>
+   <!-- =========================================================
          Submission Guidelines Section
          ========================================================= -->
-    <section class="guidelines">
-      <h3>Submission Guidelines</h3>
-
-      <ul class="guideline-list">
-        <li><strong>Condition:</strong> Mint / Near Mint cards only.</li>
-        <li><strong>Language:</strong> English cards only.</li>
-        <li><strong>Current Prices:</strong> Buylist prices and quantities are subject to change.</li>
-        <li><strong>Sort by Category:</strong> Keep each buylist category in its own separate pile.</li>
-        <li><strong>Sleeves:</strong> EX / V cards may remain sleeved. All other cards must be unsleeved.</li>
-        <li><strong>Do Not Include:</strong> Energy cards, code cards, binders, top loaders, or non-buylist items.</li>
-        <li><strong>Quality Control:</strong> Mixed categories, excessive sleeved cards, energies, or codes may result in rejection or return.</li>
-      </ul>
-      <div class="pallet-reminder">
-  <div class="pallet-reminder-icon" aria-hidden="true">🚚</div>
-
-  <div class="pallet-reminder-copy">
-    <h4>Have 250,000+ Cards?</h4>
-
-    <p>
-      Your collection may qualify for
-      <strong>FREE freight pallet pickup.</strong>
-      Contact us before shipping to confirm eligibility and coordinate pickup.
-    </p>
-  </div>
-
-  <a class="pallet-reminder-link" href="#quote">
-    Request a Quote →
-  </a>
-</div>
-    </section>
-
-  <!-- =========================================================
+   <section class="guidelines">
+    <h3>
+     Submission Guidelines
+    </h3>
+    <ul class="guideline-list">
+     <li>
+      <strong>
+       Condition:
+      </strong>
+      Mint / Near Mint cards only.
+     </li>
+     <li>
+      <strong>
+       Language:
+      </strong>
+      English cards only.
+     </li>
+     <li>
+      <strong>
+       Current Prices:
+      </strong>
+      Buylist prices and quantities are subject to change.
+     </li>
+     <li>
+      <strong>
+       Sort by Category:
+      </strong>
+      Keep each buylist category in its own separate pile.
+     </li>
+     <li>
+      <strong>
+       Sleeves:
+      </strong>
+      EX / V cards may remain sleeved. All other cards must be unsleeved.
+     </li>
+     <li>
+      <strong>
+       Do Not Include:
+      </strong>
+      Energy cards, code cards, binders, top loaders, or non-buylist items.
+     </li>
+     <li>
+      <strong>
+       Quality Control:
+      </strong>
+      Mixed categories, excessive sleeved cards, energies, or codes may result in rejection or return.
+     </li>
+    </ul>
+    <div class="pallet-reminder">
+     <div aria-hidden="true" class="pallet-reminder-icon">
+      🚚
+     </div>
+     <div class="pallet-reminder-copy">
+      <h4>
+       Have 250,000+ Cards?
+      </h4>
+      <p>
+       Your collection may qualify for
+       <strong>
+        FREE freight pallet pickup.
+       </strong>
+       Contact us before shipping to confirm eligibility and coordinate pickup.
+      </p>
+     </div>
+     <a class="pallet-reminder-link" href="#quote">
+      Request a Quote →
+     </a>
+    </div>
+   </section>
+   <!-- =========================================================
        FAQ Section
         ========================================================= -->
-<section class="faq-card-section" id="faq" aria-labelledby="faq-title">
-  <div class="faq-card-heading">
-    <p class="faq-card-eyebrow">BulkX Seller Guide</p>
-    <h2 id="faq-title">Frequently Asked Questions</h2>
-    <p>
+   <section aria-labelledby="faq-title" class="faq-card-section" id="faq">
+    <div class="faq-card-heading">
+     <p class="faq-card-eyebrow">
+      BulkX Seller Guide
+     </p>
+     <h2 id="faq-title">
+      Frequently Asked Questions
+     </h2>
+     <p>
       Everything you need to know about quotes, shipping, payment,
       freight pickup, and selling Pokémon bulk to BulkX.
-    </p>
-  </div>
-
-  <div class="faq-card-grid">
-    <article class="faq-trading-card">
+     </p>
+    </div>
+    <div class="faq-card-grid">
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">?</span>
-          <span class="faq-card-question">How do I get a quote?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Submit our quote request form with your estimated quantities.
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         ?
+        </span>
+        <span class="faq-card-question">
+         How do I get a quote?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Submit our quote request form with your estimated quantities.
             We'll review your submission and contact you with pricing,
             shipping instructions, or pallet pickup options if your order qualifies.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">🚚</span>
-          <span class="faq-card-question">Do you offer pallet pickup?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Yes. Qualifying collections of <strong>250,000+ cards</strong>
-            may be eligible for <strong>FREE freight pallet pickup.</strong>
-            Contact us before shipping so we can determine eligibility and
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         🚚
+        </span>
+        <span class="faq-card-question">
+         Do you offer pallet pickup?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Yes. Qualifying collections of
+         <strong>
+          250,000+ cards
+         </strong>
+         may be eligible for
+         <strong>
+          FREE freight pallet pickup.
+         </strong>
+         Contact us before shipping so we can determine eligibility and
             coordinate logistics.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">🚛</span>
-          <span class="faq-card-question">What qualifies for free pallet pickup?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Collections of 250,000+ cards are generally eligible. We'll review
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         🚛
+        </span>
+        <span class="faq-card-question">
+         What qualifies for free pallet pickup?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Collections of 250,000+ cards are generally eligible. We'll review
             your estimated quantities, card mix, and location, then walk you
             through the process and schedule pickup if your order qualifies.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">📦</span>
-          <span class="faq-card-question">Who pays for shipping?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            For standard orders, shipping is the seller's responsibility.
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         📦
+        </span>
+        <span class="faq-card-question">
+         Who pays for shipping?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         For standard orders, shipping is the seller's responsibility.
             Qualifying pallet-sized collections may receive
-            <strong>FREE freight pickup</strong> arranged and paid for by BulkX.
-          </p>
-        </div>
+         <strong>
+          FREE freight pickup
+         </strong>
+         arranged and paid for by BulkX.
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">🌎</span>
-          <span class="faq-card-question">Do you accept orders from Canada or Mexico?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Yes. We purchase qualifying collections from Canada and Mexico.
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         🌎
+        </span>
+        <span class="faq-card-question">
+         Do you accept orders from Canada or Mexico?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Yes. We purchase qualifying collections from Canada and Mexico.
             For freight pickups, a complete and accurate commercial invoice
             is required for customs clearance.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">T</span>
-          <span class="faq-card-question">Are Trainers accepted with Commons and Uncommons?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Yes. Trainer cards are accepted as part of Common/Uncommon bulk.
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         T
+        </span>
+        <span class="faq-card-question">
+         Are Trainers accepted with Commons and Uncommons?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Yes. Trainer cards are accepted as part of Common/Uncommon bulk.
             Keep Trainers to approximately 25% of the total Common/Uncommon
             count and avoid excessive Trainer-only submissions.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">$</span>
-          <span class="faq-card-question">How does payment work?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <div class="faq-card-subsection">
-            <h3>Pallet Orders</h3>
-            <p>Payment is issued once the freight carrier has loaded the shipment.</p>
-          </div>
-
-          <div class="faq-card-subsection">
-            <h3>Standard Shipped Orders</h3>
-            <p>Payment is issued after the shipment has been received and verified.</p>
-          </div>
-
-          <div class="faq-card-subsection">
-            <h3>Local Sellers</h3>
-            <p>
-              If you're located in Kentucky or nearby, I may be able to arrange
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         $
+        </span>
+        <span class="faq-card-question">
+         How does payment work?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <div class="faq-card-subsection">
+         <h3>
+          Pallet Orders
+         </h3>
+         <p>
+          Payment is issued once the freight carrier has loaded the shipment.
+         </p>
+        </div>
+        <div class="faq-card-subsection">
+         <h3>
+          Standard Shipped Orders
+         </h3>
+         <p>
+          Payment is issued after the shipment has been received and verified.
+         </p>
+        </div>
+        <div class="faq-card-subsection">
+         <h3>
+          Local Sellers
+         </h3>
+         <p>
+          If you're located in Kentucky or nearby, I may be able to arrange
               an in-person pickup and pay cash.
-            </p>
-          </div>
+         </p>
         </div>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">✓</span>
-          <span class="faq-card-question">Do I need to sort my cards?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Yes. Sorting by buylist category helps us process your order quickly
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         ✓
+        </span>
+        <span class="faq-card-question">
+         Do I need to sort my cards?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Yes. Sorting by buylist category helps us process your order quickly
             and ensures accurate pricing.
-          </p>
-
-          <ul>
-            <li>Commons / Uncommons</li>
-            <li>Reverse Holos</li>
-            <li>Holo Rares</li>
-            <li>EX / V Cards</li>
-            <li>Energy</li>
-          </ul>
-
-          <p>
-            If all categories are completely mixed together, the entire order
+        </p>
+        <ul>
+         <li>
+          Commons / Uncommons
+         </li>
+         <li>
+          Reverse Holos
+         </li>
+         <li>
+          Holo Rares
+         </li>
+         <li>
+          EX / V Cards
+         </li>
+         <li>
+          Energy
+         </li>
+        </ul>
+        <p>
+         If all categories are completely mixed together, the entire order
             may be purchased at the Common/Uncommon rate.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">🏪</span>
-          <span class="faq-card-question">Do I have to be a game store?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            No. We work with game stores, online sellers, distributors,
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         🏪
+        </span>
+        <span class="faq-card-question">
+         Do I have to be a game store?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         No. We work with game stores, online sellers, distributors,
             collectors, and anyone with qualifying bulk quantities.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">24</span>
-          <span class="faq-card-question">How quickly do you respond?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <p>
-            Most quote requests receive a response within 24 hours,
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         24
+        </span>
+        <span class="faq-card-question">
+         How quickly do you respond?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <p>
+         Most quote requests receive a response within 24 hours,
             often much sooner during normal business hours.
-          </p>
-        </div>
+        </p>
+       </div>
       </details>
-    </article>
-
-    <article class="faq-trading-card">
+     </article>
+     <article class="faq-trading-card">
       <details class="faq-card-item">
-        <summary>
-          <span class="faq-card-icon" aria-hidden="true">★</span>
-          <span class="faq-card-question">Why choose BulkX?</span>
-          <span class="faq-card-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-card-type-line"></div>
-        <div class="faq-card-answer">
-          <ul class="faq-card-checklist">
-            <li>Competitive buylist pricing</li>
-            <li>Fast communication</li>
-            <li>Nationwide purchasing</li>
-            <li>Canada and Mexico purchasing</li>
-            <li>Free pallet pickup on qualifying collections</li>
-            <li>Experienced Pokémon bulk buyer</li>
-            <li>Local cash pickup in select areas</li>
-          </ul>
-        </div>
+       <summary>
+        <span aria-hidden="true" class="faq-card-icon">
+         ★
+        </span>
+        <span class="faq-card-question">
+         Why choose BulkX?
+        </span>
+        <span aria-hidden="true" class="faq-card-toggle">
+        </span>
+       </summary>
+       <div class="faq-card-type-line">
+       </div>
+       <div class="faq-card-answer">
+        <ul class="faq-card-checklist">
+         <li>
+          Competitive buylist pricing
+         </li>
+         <li>
+          Fast communication
+         </li>
+         <li>
+          Nationwide purchasing
+         </li>
+         <li>
+          Canada and Mexico purchasing
+         </li>
+         <li>
+          Free pallet pickup on qualifying collections
+         </li>
+         <li>
+          Experienced Pokémon bulk buyer
+         </li>
+         <li>
+          Local cash pickup in select areas
+         </li>
+        </ul>
+       </div>
       </details>
-    </article>
-  </div>
-
-  <div class="faq-card-footer">
-    <span>Still have questions?</span>
-    <a href="#quote">Request a Quote →</a>
-  </div>
-</section>
-
-    <!-- =========================================================
+     </article>
+    </div>
+    <div class="faq-card-footer">
+     <span>
+      Still have questions?
+     </span>
+     <a href="#quote">
+      Request a Quote →
+     </a>
+    </div>
+   </section>
+   <!-- =========================================================
          Quote Form Section
          ========================================================= -->
-    <section id="quote" class="quote">
-      <h3>Ready to Sell Bulk?</h3>
-      <p>Send your inventory count, email and phone # and we’ll reach out ASAP.</p>
-
-      <form action="https://formsubmit.co/jfrost0021@gmail.com" method="POST">
-        <!-- FormSubmit settings -->
-        <input type="hidden" name="_subject" value="New BulkX Quote Request" />
-        <input type="hidden" name="_captcha" value="false" />
-
-        <!-- Seller contact info -->
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone Number" />
-
-        <!-- Inventory notes -->
-        <textarea
-          name="inventory"
-          rows="8"
-          placeholder="Paste your inventory here...
+   <section class="quote" id="quote">
+    <h3>
+     Ready to Sell Bulk?
+    </h3>
+    <p>
+     Send your inventory count, email and phone # and we’ll reach out ASAP.
+    </p>
+    <form action="https://formsubmit.co/jfrost0021@gmail.com" method="POST">
+     <!-- FormSubmit settings -->
+     <input name="_subject" type="hidden" value="New BulkX Quote Request"/>
+     <input name="_captcha" type="hidden" value="false"/>
+     <!-- Seller contact info -->
+     <input name="name" placeholder="Name" required="" type="text"/>
+     <input name="email" placeholder="Email" required="" type="email"/>
+     <input name="phone" placeholder="Phone Number" type="tel"/>
+     <!-- Inventory notes -->
+     <textarea name="inventory" placeholder="Paste your inventory here...
 
 EX / V: 100
 Reverse Holos: 1,000
 Holo Rares: 500
 Common / Uncommon: 10,000
-Energy: 1,000"
-          required></textarea>
-
-        <button class="quote-btn" type="submit">Submit Quote Request →</button>
-      </form>
-    </section>
+Energy: 1,000" required="" rows="8"></textarea>
+     <button class="quote-btn" type="submit">
+      Submit Quote Request →
+     </button>
+    </form>
+   </section>
   </main>
-
   <!-- =========================================================
        Footer
        ========================================================= -->
   <footer>
-    <a class="brand" href="/" aria-label="BulkX Home">
-    <img
-        src="BulkX-Logo.svg"
-        alt="BulkX"
-        class="brand-logo"
-    >
-</a>
-    <p>© 2026 BulkX. All rights reserved.</p>
+   <a aria-label="BulkX Home" class="brand" href="/">
+    <img alt="BulkX" class="brand-logo" src="BulkX-Logo.svg"/>
+   </a>
+   <p>
+    © 2026 BulkX. All rights reserved.
+   </p>
   </footer>
-
   <!-- =========================================================
      Calculator Script
      - Kept at the bottom so the HTML exists before JS runs.
      ========================================================= -->
-<script>
-  function getPrice(type) {
+  <script>
+   function getPrice(type) {
     const card = document.querySelector(`[data-card-type="${type}"]`);
 
     if (!card) {
@@ -1135,6 +1393,6 @@ Energy: 1,000"
   });
 
   calculateBulkValue();
-</script>
-</body>
+  </script>
+ </body>
 </html>
