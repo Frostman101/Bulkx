@@ -445,6 +445,7 @@
 .shipping-page .section h2 {
   margin-bottom: 14px;
   font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
 }
 
 .shipping-page .section-lead {
