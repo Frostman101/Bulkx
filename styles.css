@@ -1701,20 +1701,6 @@ textarea {
    footer p:last-child {
      text-align: center;
    }
-
-   .footer-contact {
-       text-align: center;
-   }
-
-   .footer-contact p {
-       margin: 8px auto;
-       text-align: center;
-   }
-
-   .footer-contact strong {
-       display: block;
-       text-align: center;
-   }
 /* =========================
 Responsive: Tablet
 ========================= */
