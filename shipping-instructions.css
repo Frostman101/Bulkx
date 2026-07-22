@@ -993,4 +993,11 @@
     max-width: 100%;
     overflow-wrap: anywhere;
   }
+  
+}
+/* Keep shipping-page navigation visible while scrolling */
+.shipping-page .nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
