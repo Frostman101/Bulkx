@@ -1282,6 +1282,7 @@ Payment Methods
 .payment-pills span {
   min-width: 125px;
   padding: 9px 18px;
+  margin-bottom: 10px;
   font-size: 14px;
   color: white;
   background: linear-gradient(180deg, var(--blue), var(--deep-blue));
