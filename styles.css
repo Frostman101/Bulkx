@@ -1677,7 +1677,94 @@ textarea {
   border-radius: 18px;
   cursor: pointer;
 }
+/* ---------------------------------------------------------
+   Submission CTA and shipping method checklist cards
+   --------------------------------------------------------- */
 
+.submission-cta-wrap {
+      position: relative;
+      overflow: hidden;
+      margin-top: 56px;
+      background:
+        radial-gradient(circle at 12% 24%, rgba(255, 203, 5, 0.18) 0 3px, transparent 4px),
+        radial-gradient(circle at 88% 68%, rgba(255, 255, 255, 0.14) 0 3px, transparent 4px),
+        linear-gradient(135deg, var(--navy, #041b3f), var(--deep-blue, #004b9b));
+      border-top: 8px solid var(--yellow, #ffcb05);
+      color: #fff;
+    }
+
+    .submission-cta-wrap::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -70px;
+      top: -82px;
+      border: 18px solid rgba(255, 203, 5, 0.2);
+      border-radius: 50%;
+    }
+
+    .submission-cta-wrap::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: -58px;
+      bottom: -72px;
+      border-radius: 50%;
+      background: rgba(7, 153, 241, 0.2);
+    }
+
+    .submission-cta {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 36px;
+      padding-top: 58px;
+      padding-bottom: 58px;
+    }
+
+    .submission-cta .kicker {
+      color: var(--yellow, #ffcb05);
+      margin-bottom: 8px;
+    }
+
+    .submission-cta h2 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      line-height: 1.05;
+    }
+
+    .submission-cta p {
+      max-width: 720px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.05rem;
+    }
+
+    .submission-cta .quote-btn {
+      flex: 0 0 auto;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 860px) {
+      .submission-cta {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .submission-cta p {
+        margin-inline: auto;
+      }
+
+      .submission-cta .quote-btn {
+        justify-self: center;
+      }
+    }
 /* =========================
    Footer
    ========================= */
