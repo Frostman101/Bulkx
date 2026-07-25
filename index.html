@@ -304,14 +304,46 @@
      <!-- EX Card -->
      <article class="buy-card purple" data-card-type="exv" data-price="0.70">
    <div class="buy-icon">
-     <svg aria-label="Purple EX icon" role="img" viewBox="0 0 120 120">
-       <polygon points="60 8 75 39 109 26 95 61 113 91 78 86 60 113 42 86 7 91 25 61 11 26 45 39">
-       </polygon>
-       <circle cx="60" cy="62" r="25">
-       </circle>
-       <circle cx="60" cy="62" r="10">
-       </circle>
-     </svg>
+     <svg
+  aria-label="Double star icon"
+  role="img"
+  viewBox="0 0 120 120"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <polygon id="star"
+      points="0,-40 10,-13 38,-13 16,5 24,33 0,17 -24,33 -16,5 -38,-13 -10,-13"/>
+  </defs>
+
+  <!-- Large Star -->
+  <g transform="translate(38 46) scale(1)">
+    <use href="#star"
+         fill="#231F20"
+         stroke="#000"
+         stroke-width="10"
+         stroke-linejoin="round"/>
+    <use href="#star"
+         fill="#231F20"
+         stroke="#FFF"
+         stroke-width="7"
+         stroke-linejoin="round"/>
+  </g>
+
+  <!-- Small Star -->
+  <g transform="translate(88 70) scale(.72)">
+    <use href="#star"
+         fill="#231F20"
+         stroke="#000"
+         stroke-width="10"
+         stroke-linejoin="round"/>
+    <use href="#star"
+         fill="#231F20"
+         stroke="#FFF"
+         stroke-width="7"
+         stroke-linejoin="round"/>
+  </g>
+
+</svg>
    </div>
       <div class="buy-copy">
        <h4>
