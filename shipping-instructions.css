@@ -336,24 +336,6 @@
   box-shadow: 0 18px 45px rgba(2, 11, 30, 0.12);
 }
 
-.shipping-page .jump-card::after,
-.shipping-page .info-card::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  right: -40px;
-  bottom: -65px;
-  z-index: 0;
-  border: 10px solid #111;
-  border-radius: 50%;
-  opacity: 0.055;
-  background:
-    radial-gradient(circle at 50% 50%, #fff 0 14px, #111 15px 25px, transparent 26px),
-    linear-gradient(to bottom, #e20d0d 0 44%, #111 44% 56%, #fff 56% 100%);
-  transform: rotate(-8deg);
-}
-
 .shipping-page .jump-card > *,
 .shipping-page .info-card > * {
   position: relative;
@@ -376,16 +358,7 @@
 }
 
 .shipping-page .jump-number i {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  right: -8px;
-  bottom: -7px;
-  border: 2px solid #111;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at center, #fff 0 3px, #111 4px 6px, transparent 7px),
-    linear-gradient(to bottom, #e20d0d 0 45%, #111 45% 55%, #fff 55% 100%);
+  display: none;
 }
 
 .shipping-page .jump-card h3 {
