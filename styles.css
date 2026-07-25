@@ -204,57 +204,194 @@ Hero Section
   flex-wrap: wrap;
 }
 
-/* Hero Poké Ball decoration */
-.pokeball {
+/* =========================================================
+   Hero Pallet Pickup Program
+   ========================================================= */
+
+/* Create the two-column hero layout */
+.hero {
+  display: block;
+  min-height: 560px;
+  padding: 0;
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 4;
+
+  width: min(1780px, 100%);
+  min-height: 560px;
+  margin: 0 auto;
+  padding: 45px clamp(28px, 5vw, 90px) 72px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(430px, 0.92fr)
+    minmax(640px, 1.35fr);
+
+  align-items: center;
+  gap: clamp(34px, 4vw, 76px);
+}
+
+/* Preserve the original left-side content */
+.hero-content {
+  position: relative;
+  z-index: 4;
+  max-width: 680px;
+}
+
+.hero-logo-img {
+  width: min(600px, 100%);
+}
+
+/* Right-side pallet program */
+.hero-pallet-program {
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns:
+    minmax(285px, 0.78fr)
+    minmax(365px, 1.22fr);
+
+  align-items: center;
+  gap: clamp(18px, 2.5vw, 42px);
+}
+
+.hero-pallet-copy {
+  position: relative;
+  padding-left: clamp(24px, 2vw, 38px);
+  border-left: 3px solid var(--yellow);
+}
+
+/* Small program label */
+.hero .hero-pallet-kicker {
+  margin: 0 0 8px;
+  max-width: none;
+
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 950;
+
+  opacity: 0.86;
+  text-shadow: none;
+}
+
+/* Pallet program title */
+.hero .hero-pallet-copy h2 {
+  margin: 0;
+
+  color: var(--yellow);
+  text-transform: uppercase;
+
+  font-size: clamp(32px, 2.7vw, 48px);
+  line-height: 0.93;
+  font-style: italic;
+  font-weight: 950;
+
+  text-shadow: 4px 5px 0 rgba(0, 0, 0, 0.38);
+}
+
+/* 250,000+ Cards */
+.hero-pallet-copy > strong {
+  display: block;
+  margin-top: 14px;
+
+  color: white;
+  text-transform: uppercase;
+
+  font-size: clamp(25px, 2vw, 36px);
+  line-height: 1;
+  font-weight: 950;
+
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Freight description */
+.hero .hero-pallet-description {
+  max-width: 430px;
+  margin: 14px 0 17px;
+
+  font-size: clamp(16px, 1.15vw, 21px);
+  line-height: 1.35;
+  font-weight: 750;
+
+  text-shadow: none;
+}
+
+/* Benefits */
+.hero-pallet-benefits {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: 12px;
+
+  list-style: none;
+}
+
+.hero-pallet-benefits li {
+  position: relative;
+  padding-left: 36px;
+
+  font-size: clamp(16px, 1.1vw, 20px);
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.hero-pallet-benefits li::before {
+  content: "✓";
+
   position: absolute;
-  z-index: 2;
-  width: clamp(300px, 34vw, 520px);
-  aspect-ratio: 1;
-  right: 8vw;
-  top: 42px;
+  top: -2px;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--deep-blue);
+  background: var(--yellow);
   border-radius: 50%;
-  background:
-  linear-gradient(155deg, rgba(255,255,255,.9) 0 8%, transparent 9%),
-  linear-gradient(165deg, #ff3a31 0 45%, #171d24 45% 52%, #fbfbfb 52% 100%);
-  border: 3px solid rgba(0,0,0,.75);
-  box-shadow:
-  0 20px 45px rgba(0,0,0,.28),
-  0 0 70px rgba(255,255,255,.75);
-  transform: rotate(-8deg);
+
+  font-size: 16px;
+  font-weight: 950;
 }
 
-.pokeball::after {
-  display: none;
+/* Pallet image */
+.hero-pallet-visual {
+  min-width: 0;
+  align-self: end;
+  margin-bottom: 60px;
 }
 
-.pokeball-band {
-  width: 102%;
-  left: -1%;
-  height: 13%;
-  border-radius: 40px;
-}
+.hero-pallet-visual img {
+  display: block;
 
-.pokeball-button {
-  position: absolute;
-  width: 29%;
-  aspect-ratio: 1;
-  top: 38%;
-  left: 37%;
-  border-radius: 50%;
-  background: #f8f8f8;
-  border: 24px solid #20252b;
-  box-shadow: inset 0 0 0 4px #d5d5d5;
-}
+  width: min(100%, 700px);
+  height: auto;
+  margin-inline: auto;
 
-.pokeball-shine {
-  position: absolute;
-  width: 19%;
-  height: 10%;
-  left: 23%;
-  top: 9%;
-  border-radius: 50%;
-  background: rgba(255,255,255,.55);
-  transform: rotate(-35deg);
+  filter: drop-shadow(0 22px 18px rgba(0, 0, 0, 0.25));
+
+  -webkit-mask-image:
+    radial-gradient(
+      ellipse 73% 70% at 54% 51%,
+      #000 63%,
+      transparent 98%
+    );
+
+  mask-image:
+    radial-gradient(
+      ellipse 73% 70% at 54% 51%,
+      #000 63%,
+      transparent 98%
+    );
 }
 
 .yellow-swoosh {
@@ -1705,32 +1842,71 @@ textarea {
    footer p:last-child {
      text-align: center;
    }
-/* =========================
-Responsive: Tablet
-========================= */
+   /* =========================
+      Responsive: Tablet
+      ========================= */
 
-@media (max-width: 1050px) {
-  .nav {
-    flex-wrap: wrap;
-    padding: 18px 4vw;
-  }
+   @media (max-width: 1050px) {
+     .nav {
+       flex-wrap: wrap;
+       padding: 18px 4vw;
+     }
 
-.nav-links {
-  order: 3;
-  width: 100%;
-}
+     .nav-links {
+       order: 3;
+       width: 100%;
+     }
 
-.pokeball {
-  opacity: .35;
-  right: -70px;
-}
+     /* New hero layout */
+     .hero {
+       min-height: auto;
+     }
 
-.buy-grid,
-.steps,
-.features {
-  grid-template-columns: repeat(2, 1fr);
-}
-}
+     .hero-layout {
+       min-height: auto;
+       padding: 44px 5vw 92px;
+       grid-template-columns: 1fr;
+       gap: 42px;
+     }
+
+     .hero-content {
+       max-width: 760px;
+       margin-inline: auto;
+       text-align: center;
+     }
+
+     .hero-content > p {
+       margin-inline: auto;
+     }
+
+     .hero-actions {
+       justify-content: center;
+     }
+
+     .hero-pallet-program {
+       width: min(850px, 100%);
+       margin-inline: auto;
+
+       grid-template-columns:
+         minmax(280px, 0.85fr)
+         minmax(340px, 1.15fr);
+     }
+
+     .hero-pallet-visual {
+       align-self: center;
+       margin-bottom: 0;
+     }
+
+     .yellow-swoosh {
+       width: 92vw;
+     }
+
+     .buy-grid,
+     .steps,
+     .features {
+       grid-template-columns: repeat(2, 1fr);
+     }
+   }
 
 /* Calculator and guidelines stack earlier than the rest of the page */
 @media (max-width: 850px) {
@@ -1744,10 +1920,32 @@ Responsive: Tablet
   margin: 60px auto 10px;
 }
 }
-
 /* =========================
-Responsive: Mobile
-========================= */
+   Responsive: Medium Desktop
+   ========================= */
+
+@media (min-width: 1051px) and (max-width: 1220px) {
+  .hero-layout {
+    grid-template-columns:
+      minmax(390px, 0.9fr)
+      minmax(520px, 1.1fr);
+
+    gap: 28px;
+  }
+
+  .hero-pallet-program {
+    grid-template-columns:
+      minmax(250px, 0.85fr)
+      minmax(300px, 1.15fr);
+  }
+
+  .hero-pallet-copy {
+    padding-left: 24px;
+  }
+}
+/* =========================
+   Responsive: Mobile
+   ========================= */
 
 @media (max-width: 650px) {
   .buylist .section-title {
@@ -1758,90 +1956,190 @@ Responsive: Mobile
     padding: 0 16px;
   }
 
-.buylist .section-title h3 {
-  font-size: clamp(34px, 10vw, 46px);
-  text-align: center;
-  line-height: .9;
+  .buylist .section-title h3 {
+    font-size: clamp(34px, 10vw, 46px);
+    text-align: center;
+    line-height: .9;
+  }
+
+  .buylist .section-ball {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand {
+    font-size: 42px;
+  }
+
+  .brand-x {
+    -webkit-text-stroke: 3px #0b54aa;
+    margin-left: 7px;
+    color: var(--yellow);
+  }
+
+  /* New mobile hero */
+  .hero {
+    min-height: auto;
+    padding: 0;
+  }
+
+  .hero-layout {
+    min-height: auto;
+    padding: 36px 16px 84px;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: none;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero-logo-img {
+    width: min(520px, 94vw);
+    margin-inline: auto;
+  }
+
+  .hero h2 {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+
+  .hero-content > p {
+    margin-inline: auto;
+    font-size: 19px;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-actions .quote-btn,
+  .hero-actions .outline-btn {
+    width: 100%;
+  }
+
+  .hero-pallet-program {
+    width: 100%;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .hero-pallet-visual {
+    order: 0;
+    width: min(520px, 112%);
+    margin: 0 -6% -8px;
+    align-self: center;
+  }
+
+  .hero-pallet-copy {
+    order: 1;
+    padding: 22px 18px 0;
+    border-left: 0;
+    border-top: 3px solid var(--yellow);
+  }
+
+  .hero-pallet-benefits {
+    width: max-content;
+    max-width: 100%;
+    margin-inline: auto;
+    text-align: left;
+  }
+
+  .hero .hero-pallet-kicker {
+    font-size: 12px;
+  }
+
+  .hero .hero-pallet-description {
+    margin-inline: auto;
+    font-size: 17px;
+  }
+
+  .yellow-swoosh {
+    width: 100vw;
+    height: 120px;
+    bottom: -80px;
+  }
+
+  .h-x {
+    -webkit-text-stroke: 5px #0b54aa;
+    margin-left: 12px;
+  }
+
+  .payment-pills {
+    gap: 12px;
+  }
+
+  .quote-btn,
+  .outline-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .buy-grid,
+  .steps,
+  .features,
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-card {
+    grid-template-columns: 35% 65%;
+    overflow: hidden;
+  }
+
+  .bulk-calculator {
+    padding: 30px 28px;
+  }
+
+  .bulk-calculator h4 {
+    font-size: 34px;
+  }
+
+  .bulk-calculator .quote-btn {
+    width: 100%;
+  }
+
+  .guidelines {
+    padding: 26px 22px;
+    margin-top: 28px;
+  }
+
+  .guideline-list li {
+    font-size: 16px;
+    padding-left: 32px;
+  }
+
+  .guideline-list li::before {
+    left: 10px;
+    width: 19px;
+    height: 19px;
+  }
+
+  footer p:last-child {
+    text-align: left;
+  }
 }
+/* =========================
+   Responsive: Very Small Phones
+   ========================= */
 
+@media (max-width: 390px) {
+  .hero-layout {
+    padding-inline: 12px;
+  }
 
+  .hero-pallet-copy {
+    padding-inline: 8px;
+  }
 
-.brand {
-  font-size: 42px;
-}
-
-.brand-x {
-  -webkit-text-stroke: 3px #0b54aa;
-  margin-left: 7px;
-  color: var(--yellow);
-}
-
-.hero {
-  padding: 42px 5vw 70px;
-}
-
-.hero h1 {
-  font-size: 86px;
-  letter-spacing: -7px;
-}
-
-.h-x {
-  -webkit-text-stroke: 5px #0b54aa;
-  margin-left: 12px;
-}
-
-.hero-actions,
-.payment-pills {
-  gap: 12px;
-}
-
-.quote-btn,
-.outline-btn {
-  width: 100%;
-  font-size: 16px;
-}
-
-.buy-grid,
-.steps,
-.features,
-footer {
-  grid-template-columns: 1fr;
-}
-
-.buy-card {
-  grid-template-columns: 35% 65%;
-  overflow: hidden;
-}
-
-.bulk-calculator {
-  padding: 30px 28px;
-}
-
-.bulk-calculator h4 {
-  font-size: 34px;
-}
-
-.bulk-calculator .quote-btn {
-  width: 100%;
-}
-
-.guidelines {
-  padding: 26px 22px;
-  margin-top: 28px;
-}
-
-.guideline-list li {
-  font-size: 16px;
-  padding-left: 32px;
-}
-
-.guideline-list li::before {
-  left: 10px;
-  width: 19px;
-  height: 19px;
-}
-
-footer p:last-child {
-  text-align: left;
-}
+  .hero-pallet-benefits li {
+    font-size: 15px;
+  }
 }
