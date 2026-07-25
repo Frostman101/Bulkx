@@ -302,7 +302,7 @@
  </div>
     <div class="buy-grid">
      <!-- EX Card -->
-     <article class="buy-card purple" data-card-type="exv" data-price="0.70">
+     <article class="buy-card pokemon-ex" data-card-type="exv" data-price="0.70">
    <div class="buy-icon">
      <svg
   aria-label="Double star icon"
@@ -363,48 +363,53 @@
       </div>
      </article>
      <!-- V Card -->
-     <article class="buy-card purple-2" data-card-type="exv" data-price="0.70">
+     <article class="buy-card pokemon-v" data-card-type="exv" data-price="0.70">
        <div class="buy-icon">
          <svg
-           aria-label="Purple moon icon"
-           role="img"
-           viewBox="0 0 120 120"
-           xmlns="http://www.w3.org/2000/svg"
-         >
-           <svg
-             x="10"
-             y="10"
-             width="100"
-             height="100"
-             viewBox="0 0 1280 1278"
-             preserveAspectRatio="xMidYMid meet"
-           >
-             <!-- Original purple background -->
-             <ellipse
-               cx="640"
-               cy="639"
-               rx="640"
-               ry="639"
-               fill="#9153A0"
-             />
+      aria-label="Double star icon"
+      role="img"
+      viewBox="0 0 135 120"
+      xmlns="http://www.w3.org/2000/svg">
 
-             <!-- Black moon -->
-             <circle
-             cx="655"
-             cy="639"
-             r="395"
-             fill="#040609"
-             />
+      <defs>
+        <polygon
+          id="star"
+          points="0,-40 10,-13 38,-13 16,5 24,33 0,17 -24,33 -16,5 -38,-13 -10,-13" />
+      </defs>
 
-             <!-- Purple cutout -->
-             <circle
-             cx="825"
-             cy="625"
-             r="315"
-             fill="#9153A0"
-             />
-           </svg>
-         </svg>
+      <!-- Large Star -->
+      <g transform="translate(45 48) scale(.88)">
+        <use
+          href="#star"
+          fill="#231F20"
+          stroke="#000"
+          stroke-width="10"
+          stroke-linejoin="round" />
+        <use
+          href="#star"
+          fill="#231F20"
+          stroke="#FFF"
+          stroke-width="5"
+          stroke-linejoin="round" />
+      </g>
+
+      <!-- Small Star -->
+      <g transform="translate(101 70) scale(.60)">
+        <use
+          href="#star"
+          fill="#231F20"
+          stroke="#000"
+          stroke-width="10"
+          stroke-linejoin="round" />
+        <use
+          href="#star"
+          fill="#231F20"
+          stroke="#FFF"
+          stroke-width="5"
+          stroke-linejoin="round" />
+      </g>
+
+    </svg>
        </div>
 
        <div class="buy-copy">
