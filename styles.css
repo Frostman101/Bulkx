@@ -598,11 +598,11 @@ Buylist Section
 
 .buy-card.pokemon-ex h4,
 .buy-card.pokemon-v h4 {
-  color: #6E3F8A;
+  color: #B8942A;
 }
 
 .buy-card.reverse-holo h4 {
-  color: #1A3E74;
+  color: #B8942A;
 }
 
 .buy-card.holo-rare h4 {
@@ -610,11 +610,11 @@ Buylist Section
 }
 
 .buy-card.common-uncommon h4 {
-  color: #4A4038;
+  color: #B8942A;
 }
 
 .buy-card.energy-card h4 {
-  color: #D4AF00;
+  color: #B8942A;
 }
 
 /* =========================================================
