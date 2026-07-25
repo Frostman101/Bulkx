@@ -618,6 +618,7 @@ Buylist Section
 .buy-card.holo-rare .buy-copy strong,
 .buy-card.holo-rare .buy-copy p {
   color: #231F20;
+  -webkit-text-stroke: 0.35px #C9A227;
 }
 
 /* Common / Uncommon text */
