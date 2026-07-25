@@ -456,16 +456,37 @@
      <!-- Holo Rares Card -->
      <article class="buy-card black" data-card-type="holo" data-price="0.055">
       <div class="buy-icon">
-       <svg aria-label="Black and yellow holo rare icon" role="img" viewbox="0 0 120 120">
-        <circle cx="60" cy="60" r="53">
-        </circle>
-        <path class="gold" d="M60 12l13 34 35 14-35 14-13 34-14-34-34-14 34-14 14-34Z">
-        </path>
-        <path class="gold small-a" d="M92 20l5 11 11 5-11 5-5 11-5-11-11-5 11-5 5-11Z">
-        </path>
-        <path class="gold small-b" d="M24 75l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z">
-        </path>
-       </svg>
+        <svg
+   aria-label="Holo Rare Star"
+   role="img"
+   viewBox="0 0 120 120"
+   xmlns="http://www.w3.org/2000/svg"
+ >
+   <defs>
+     <polygon
+       id="star"
+       points="0,-40 10,-13 38,-13 16,5 24,33 0,17 -24,33 -16,5 -38,-13 -10,-13"
+     />
+   </defs>
+
+   <!-- Black outline -->
+   <g transform="translate(60 60) scale(.92)">
+     <use
+       href="#star"
+       fill="#231F20"
+       stroke="#000"
+       stroke-width="10"
+       stroke-linejoin="round"
+     />
+     <use
+       href="#star"
+       fill="#231F20"
+       stroke="#D4AF37"
+       stroke-width="4"
+       stroke-linejoin="round"
+     />
+   </g>
+ </svg>
       </div>
       <div class="buy-copy">
        <h4>
