@@ -592,47 +592,39 @@ Buylist Section
   -webkit-text-stroke: 2px #111;
   margin-right: 8px;
 }
-/* EX text */
-.buy-card.pokemon-ex .buy-copy h4,
-.buy-card.pokemon-ex .buy-copy strong,
-.buy-card.pokemon-ex .buy-copy p {
+/* =========================================================
+   Buylist Heading Colors
+   ========================================================= */
+
+.buy-card.pokemon-ex h4,
+.buy-card.pokemon-v h4 {
   color: #6E3F8A;
 }
 
-/* V text */
-.buy-card.pokemon-v .buy-copy h4,
-.buy-card.pokemon-v .buy-copy strong,
-.buy-card.pokemon-v .buy-copy p {
-  color: #6E3F8A;
-}
-
-/* Reverse Holo text */
-.buy-card.reverse-holo .buy-copy h4,
-.buy-card.reverse-holo .buy-copy strong,
-.buy-card.reverse-holo .buy-copy p {
+.buy-card.reverse-holo h4 {
   color: #1A3E74;
 }
 
-/* Holo Rare text */
-.buy-card.holo-rare .buy-copy h4,
-.buy-card.holo-rare .buy-copy strong,
-.buy-card.holo-rare .buy-copy p {
-  color: #231F20;
-  -webkit-text-stroke: 0.35px #C9A227;
+.buy-card.holo-rare h4 {
+  color: #B8942A;
 }
 
-/* Common / Uncommon text */
-.buy-card.common-uncommon .buy-copy h4,
-.buy-card.common-uncommon .buy-copy strong,
-.buy-card.common-uncommon .buy-copy p {
-  color: #C62828;
+.buy-card.common-uncommon h4 {
+  color: #3B3232;
 }
 
-/* Energy text */
-.buy-card.energy-card .buy-copy h4,
-.buy-card.energy-card .buy-copy strong,
-.buy-card.energy-card .buy-copy p {
+.buy-card.energy-card h4 {
   color: #D4AF00;
+}
+
+/* =========================================================
+   Force all buylist text except headings to black
+   ========================================================= */
+
+.buy-card .buy-copy strong,
+.buy-card .buy-copy p,
+.buy-card .buy-copy small {
+  color: #231F20 !important;
 }
 /* =========================
 Bulk Calculator
