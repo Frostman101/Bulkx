@@ -592,7 +592,47 @@ Buylist Section
   -webkit-text-stroke: 2px #111;
   margin-right: 8px;
 }
+/* EX text */
+.buy-card.pokemon-ex .buy-copy h4,
+.buy-card.pokemon-ex .buy-copy strong,
+.buy-card.pokemon-ex .buy-copy p {
+  color: #9153A0;
+}
 
+/* V text */
+.buy-card.pokemon-v .buy-copy h4,
+.buy-card.pokemon-v .buy-copy strong,
+.buy-card.pokemon-v .buy-copy p {
+  color: #9153A0;
+}
+
+/* Reverse Holo text */
+.buy-card.reverse-holo .buy-copy h4,
+.buy-card.reverse-holo .buy-copy strong,
+.buy-card.reverse-holo .buy-copy p {
+  color: #1A3E74;
+}
+
+/* Holo Rare text */
+.buy-card.holo-rare .buy-copy h4,
+.buy-card.holo-rare .buy-copy strong,
+.buy-card.holo-rare .buy-copy p {
+  color: #231F20;
+}
+
+/* Common / Uncommon text */
+.buy-card.common-uncommon .buy-copy h4,
+.buy-card.common-uncommon .buy-copy strong,
+.buy-card.common-uncommon .buy-copy p {
+  color: #C62828;
+}
+
+/* Energy text */
+.buy-card.energy-card .buy-copy h4,
+.buy-card.energy-card .buy-copy strong,
+.buy-card.energy-card .buy-copy p {
+  color: #D4AF00;
+}
 /* =========================
 Bulk Calculator
 ========================= */
