@@ -596,46 +596,19 @@ Buylist Section
    Buylist Heading Colors
    ========================================================= */
 
-.buy-card.pokemon-ex h4,
-.buy-card.pokemon-v h4 {
-  color: #F9CD29;
-  text-shadow:
-    1px 1px 0 #2F56C8,
-    2px 2px 0 #2F56C8,
-    3px 3px 0 #2F56C8;
-}
-
-.buy-card.reverse-holo h4 {
-  color: #F9CD29;
-  text-shadow:
-    1px 1px 0 #2F56C8,
-    2px 2px 0 #2F56C8,
-    3px 3px 0 #2F56C8;
-}
-
-.buy-card.holo-rare h4 {
-  color: #F9CD29;
-  text-shadow:
-    1px 1px 0 #2F56C8,
-    2px 2px 0 #2F56C8,
-    3px 3px 0 #2F56C8;
-}
-
-.buy-card.common-uncommon h4 {
-  color: #F9CD29;
-  text-shadow:
-    1px 1px 0 #2F56C8,
-    2px 2px 0 #2F56C8,
-    3px 3px 0 #2F56C8;
-}
-
-.buy-card.energy-card h4 {
-  color: #F9CD29;
-  text-shadow:
-    1px 1px 0 #2F56C8,
-    2px 2px 0 #2F56C8,
-    3px 3px 0 #2F56C8;
-}
+   .buy-card.pokemon-ex h4,
+   .buy-card.pokemon-v h4,
+   .buy-card.reverse-holo h4,
+   .buy-card.holo-rare h4,
+   .buy-card.common-uncommon h4,
+   .buy-card.energy-card h4 {
+     color: #F9CD29;
+     font-weight: 900;
+     text-shadow:
+       1px 1px 0 #173A8F,
+       2px 2px 0 #173A8F,
+       3px 3px 0 #173A8F;
+   }
 
 /* =========================================================
    Force all buylist text except headings to black
