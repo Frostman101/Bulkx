@@ -602,13 +602,30 @@ Buylist Section
    .buy-card.holo-rare h4,
    .buy-card.common-uncommon h4,
    .buy-card.energy-card h4 {
-     color: #F9CD29;
-     font-size: 1.3rem;
+     color: #17264f;
+     font-size: 1.2rem;
      font-weight: 900;
-     text-shadow:
-       1px 1px 0 #173A8F,
-       2px 2px 0 #173A8F,
-       3px 3px 0 #173A8F;
+     font-style: normal;
+     letter-spacing: 0.2px;
+     line-height: 1.1;
+     text-shadow: none;
+     position: relative;
+     padding-bottom: 7px;
+   }
+
+   .buy-card.pokemon-ex h4::after,
+   .buy-card.pokemon-v h4::after,
+   .buy-card.reverse-holo h4::after,
+   .buy-card.holo-rare h4::after,
+   .buy-card.common-uncommon h4::after,
+   .buy-card.energy-card h4::after {
+     content: "";
+     display: block;
+     width: 34px;
+     height: 3px;
+     margin: 6px auto 0;
+     background: #F9CD29;
+     border-radius: 999px;
    }
 
 /* =========================================================
