@@ -603,6 +603,7 @@ Buylist Section
    .buy-card.common-uncommon h4,
    .buy-card.energy-card h4 {
      color: #F9CD29;
+     font-size: 1.3rem;
      font-weight: 900;
      text-shadow:
        1px 1px 0 #173A8F,
