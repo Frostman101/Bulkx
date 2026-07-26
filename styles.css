@@ -519,10 +519,11 @@ Buylist Section
 }
 
 .buy-copy p {
-  margin: 8px 0 0;
-  font-size: 19px;
-  font-weight: 950;
-  font-style: italic;
+  margin: 10px 0 0;
+  font-size: clamp(14px, 1.15vw, 17px);
+  line-height: 1.25;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* Buylist icon colors */
@@ -593,50 +594,49 @@ Buylist Section
   margin-right: 8px;
 }
 /* =========================================================
-   Buylist Heading Colors
+   Buylist Card Typography
    ========================================================= */
 
-   .buy-card.pokemon-ex h4,
-   .buy-card.pokemon-v h4,
-   .buy-card.reverse-holo h4,
-   .buy-card.holo-rare h4,
-   .buy-card.common-uncommon h4,
-   .buy-card.energy-card h4 {
-     color: #17264f;
-     font-size: 1.2rem;
-     font-weight: 900;
-     font-style: normal;
-     letter-spacing: 0.2px;
-     line-height: 1.1;
-     text-shadow: none;
-     position: relative;
-     padding-bottom: 7px;
-   }
+/* Blue and gold category pill */
+.buy-card .buy-copy h4 {
+  display: inline-block;
 
-   .buy-card.pokemon-ex h4::after,
-   .buy-card.pokemon-v h4::after,
-   .buy-card.reverse-holo h4::after,
-   .buy-card.holo-rare h4::after,
-   .buy-card.common-uncommon h4::after,
-   .buy-card.energy-card h4::after {
-     content: "";
-     display: block;
-     width: 34px;
-     height: 3px;
-     margin: 6px auto 0;
-     background: #F9CD29;
-     border-radius: 999px;
-   }
+  margin: 0 0 15px;
+  padding: 6px 14px;
 
-/* =========================================================
-   buylist text 
-   ========================================================= */
+  color: var(--yellow);
+  background: linear-gradient(
+    180deg,
+    var(--blue),
+    var(--deep-blue)
+  );
 
-   .buy-card .buy-copy strong,
-   .buy-card .buy-copy p,
-   .buy-card .buy-copy small {
-     color: var(--ink) !important;
-   }
+  border: 3px solid var(--yellow);
+  border-radius: 999px;
+
+  font-size: clamp(14px, 1.05vw, 17px);
+  line-height: 1.05;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0.15px;
+
+  text-shadow: none;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* Main price */
+.buy-card .buy-copy strong {
+  color: #231f20;
+}
+
+/* Secondary rate information */
+.buy-card .buy-copy p,
+.buy-card .buy-copy small {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 800;
+}
+
 /* =========================
 Bulk Calculator
 ========================= */
