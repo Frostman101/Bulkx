@@ -629,14 +629,14 @@ Buylist Section
    }
 
 /* =========================================================
-   Force all buylist text except headings to black
+   buylist text 
    ========================================================= */
 
-.buy-card .buy-copy strong,
-.buy-card .buy-copy p,
-.buy-card .buy-copy small {
-  color: #231F20 !important;
-}
+   .buy-card .buy-copy strong,
+   .buy-card .buy-copy p,
+   .buy-card .buy-copy small {
+     color: var(--ink) !important;
+   }
 /* =========================
 Bulk Calculator
 ========================= */
